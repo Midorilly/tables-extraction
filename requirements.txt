@@ -1,0 +1,13 @@
+docling
+termcolor
+neo4j
+markdown-analysis
+more-itertools
+hf_xet
+langchain
+langchain-community
+langchain-core
+langchain-openai
+neo4j-graphrag
+openai
+python-dotenv
