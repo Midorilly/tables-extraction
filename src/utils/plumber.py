@@ -3,8 +3,8 @@ import pandas as pd
 import os
 import re
 
-PDF_PATH = "../../data/pdf/criteri/Allegato_8_Criteri_Abruzzo.pdf"
-OUT_DIR  = "../../data/tables_exploration2"
+PDF_PATH = "../../data/pdf/criteri/FVG_capitolato_da_pag_77.pdf"
+OUT_DIR  = "../../data/tables_exploration"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 # Some keywords that often indicate a "super-title" or category header that spans the entire width of the table
@@ -287,6 +287,42 @@ def split_tables_after_totale(tables):
     print(f"Divisione post-'totale' completata. Le tabelle sono passate da {len(tables)} a {len(split_list)}.")
     return split_list
 
+def compress_staggered_columns(df):
+    """
+    Realign staggered columns (a common issue with joined cells) by merging them together if and only if they never overlap in the same row.
+    """
+    
+    # Remove empty columns first to avoid confusion in the merging logic
+    df_clean = df.replace(r'^\s*$', pd.NA, regex=True).dropna(how='all', axis=1)
+    if df_clean.empty:
+        return df_clean
+        
+    cols = list(df_clean.columns)
+    if not cols:
+        return df_clean
+        
+    merged = []
+    current_col = df_clean[cols[0]].copy()
+    
+    for i in range(1, len(cols)):
+        next_col = df_clean[cols[i]]
+        
+        # There is an overlap if there is at least one row where both current_col and next_col have non-NA values
+        overlap = (current_col.notna() & next_col.notna()).any()
+        
+        if not overlap:
+            # If there is no overlap, we can safely merge the two columns by filling NA values in current_col with values from next_col
+            current_col = current_col.combine_first(next_col)
+        else:
+            # If they collide, they are actually two distinct columns. Close the current one and move to the next
+            merged.append(current_col)
+            current_col = next_col.copy()
+            
+    merged.append(current_col)
+    res = pd.concat(merged, axis=1)
+    res.columns = range(res.shape[1])
+    return res
+
 def filter_invalid_tables(tables):
     """Filter out tables that are essentially just a single row or a single column after dropping empty cells."""
     valid_tables = []
@@ -330,6 +366,11 @@ if __name__ == "__main__":
         merged_tables = merge_continuation_tables(valid_tables)
         split_tables = split_tables_by_super_titles(merged_tables)
         tot_split_tables = split_tables_after_totale(split_tables)
+        
+        # Riapproviamo columns fixing per ciascuna tabella
+        for t in tot_split_tables:
+            t["data"] = compress_staggered_columns(t["data"])
+            
         final_tables = filter_invalid_tables(tot_split_tables)
         save_tables_for_inspection(final_tables)
 
