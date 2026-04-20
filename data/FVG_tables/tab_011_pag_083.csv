@@ -1,0 +1,8 @@
+GIUDIZIO;COEFFICIENTE
+Ottimo;1,0
+Buono;0,8
+Discreto;0,7
+Sufficiente;0,6
+Scarso;0,4
+Insufficiente;0,2
+Non valutabile/non presente/non conforme;0,0
