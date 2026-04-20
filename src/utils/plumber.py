@@ -329,10 +329,10 @@ def filter_invalid_tables(tables):
     for table_info in tables:
         df = table_info["data"]
         
-        # Sostituisce stringhe vuote con NA per usare dropna
+        # Replace empty strings with NA and drop rows and columns that are entirely NA to identify tables that are effectively empty or just a single row/column of data
         cleaned_df = df.replace(r'^\s*$', pd.NA, regex=True).dropna(how='all', axis=0).dropna(how='all', axis=1)
         
-        # Se dopo la pulizia rimane 1 o 0 righe, oppure 1 o 0 colonne, la eliminiamo
+        # If after cleaning the table has 1 or fewer rows or columns, it's not a valid table for our purposes
         if cleaned_df.shape[0] <= 1 or cleaned_df.shape[1] <= 1:
             continue
             
@@ -367,7 +367,6 @@ if __name__ == "__main__":
         split_tables = split_tables_by_super_titles(merged_tables)
         tot_split_tables = split_tables_after_totale(split_tables)
         
-        # Riapproviamo columns fixing per ciascuna tabella
         for t in tot_split_tables:
             t["data"] = compress_staggered_columns(t["data"])
             
