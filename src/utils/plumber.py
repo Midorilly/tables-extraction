@@ -3,9 +3,9 @@ import pandas as pd
 import os
 import re
 
-PDF_PATH = "../../data/pdf/criteri/FVG_capitolato_da_pag_77.pdf"
-OUT_DIR  = "../../data/tables_exploration"
-os.makedirs(OUT_DIR, exist_ok=True)
+PDF_DIR = "../../data/pdf/capitolati"
+BASE_OUT_DIR = "../../data/tables_exploration"
+os.makedirs(BASE_OUT_DIR, exist_ok=True)
 
 # Some keywords that often indicate a "super-title" or category header that spans the entire width of the table
 TITLE_BREAK_KEYWORDS = [
@@ -14,10 +14,11 @@ TITLE_BREAK_KEYWORDS = [
 
 # Some keywords that often indicate a new column header
 HEADER_BREAK_KEYWORDS = [
-    'giudizio', 'coefficiente', 'parametro', 'criterio',
+    'giudizio', 'coefficiente', 'parametro', 'criterio', 'criteri', 'punteggio',
     'lotto', 'voce', 'descrizione', 'quadro',
     'importo', 'totale', 'oneri', 'sicurezza', 'iva',
     'ribasso', "base d'asta", 'somme', 'art.',
+    'presidio', 'presidi', 'reparto', 'reparti', 'struttura', 'strutture', 'numero'
 ]
 
 # Pdfplumber extraction 
@@ -149,7 +150,7 @@ def merge_continuation_tables(raw_tables):
                     for x in next_df.iloc[row_for_number].tolist()
                 ]
                 has_pure_number = any(
-                    str(c).strip().replace('.', '', 1).isdigit()
+                    (str(c).strip().replace('.', '', 1).isalnum() and any(char.isdigit() for char in str(c)))
                     for c in next_first_row_list if str(c).strip() != ""
                 )
                 
@@ -193,7 +194,8 @@ def split_tables_by_super_titles(tables):
             if idx > 0:
                 prev_row = df.iloc[idx - 1]
                 prev_non_empty = [c for c in prev_row if pd.notna(c) and str(c).strip() != ""]
-                if len(prev_non_empty) == 1:
+                # Check if the previous row is a super-title (only 1 non-empty cell) to avoid splitting on consecutive super-titles that likely belong to the same header block
+                if len(prev_non_empty) == 1 and pd.notna(prev_row.iloc[0]) and str(prev_row.iloc[0]).strip() != "":
                     prev_was_single = True
             
             # A super-title is a row with only 1 non-empty cell, but we only consider it a valid split point if within the next 3 rows we find a "data row" with more than 1 non-empty cell, 
@@ -251,7 +253,7 @@ def split_tables_by_super_titles(tables):
     return split_tables_list
 
 def split_tables_after_totale(tables):
-    """Split tables after any row that contains only the word 'totale' in any column."""
+    """Split tables after any row containing the word 'totale' (accommodating strings like 'totale complessivo' or 'totale glucometri')."""
     split_list = []
     for table_info in tables:
         df = table_info["data"]
@@ -260,23 +262,32 @@ def split_tables_after_totale(tables):
             continue
             
         last_split_idx = 0
+        in_totale_block = False
+        
         for idx in range(len(df)):
             row_has_totale = False
             for cell in df.iloc[idx]:
-                if pd.notna(cell) and str(cell).strip().lower() == 'totale':
-                    row_has_totale = True
-                    break
+                if pd.notna(cell):
+                    cell_text = str(cell).strip().lower()
+                    # Trigger the split if the cell explicitly STARTS with "totale", "iva", "imposta" etc.
+                    # so that rows like "IVA 22%" interspersed between "Totale" rows are kept in the same block
+                    if cell_text.startswith(('totale', 'iva', 'imposta', 'sconto', 'ribasso')) and len(cell_text) < 40:
+                        row_has_totale = True
+                        break
             
             if row_has_totale:
-                # Split the table at this point, including the "totale" row in the first part
-                sub_df = df.iloc[last_split_idx:idx + 1]
+                in_totale_block = True
+            elif in_totale_block:
+                # We just exited a block of "totale" rows. Split the table right before this current row.
+                sub_df = df.iloc[last_split_idx:idx]
                 if not sub_df.empty:
                     new_info = table_info.copy()
                     new_info["data"] = sub_df
                     split_list.append(new_info)
-                last_split_idx = idx + 1
+                last_split_idx = idx
+                in_totale_block = False
         
-        # Add any remaining part of the table after the last "totale" split
+        # Add any remaining part of the table
         if last_split_idx < len(df):
             sub_df = df.iloc[last_split_idx:]
             if not sub_df.empty:
@@ -323,6 +334,17 @@ def compress_staggered_columns(df):
     res.columns = range(res.shape[1])
     return res
 
+def remove_consecutive_duplicates(df):
+    """
+    Delete consecutive duplicate rows in the DataFrame, keeping only the first occurrence. 
+    """
+    if df.empty:
+        return df
+    
+    # Create a mask that is True for rows that are different from the previous row, and False for rows that are identical to the previous row.
+    mask = (df != df.shift(1)).any(axis=1)
+    # Keep only the rows where the mask is True, which means they are different from the previous row, and reset the index.
+    return df[mask].reset_index(drop=True)
 def filter_invalid_tables(tables):
     """Filter out tables that are essentially just a single row or a single column after dropping empty cells."""
     valid_tables = []
@@ -341,7 +363,8 @@ def filter_invalid_tables(tables):
     print(f"Filtraggio completato. Le tabelle valide finali sono {len(valid_tables)}.")
     return valid_tables
 
-def save_tables_for_inspection(tables):
+def save_tables_for_inspection(tables, out_dir):
+    os.makedirs(out_dir, exist_ok=True)
     for idx, table_info in enumerate(tables):
         page_start = table_info["page_num"]
         page_end   = table_info.get("page_num_end", page_start)
@@ -352,26 +375,49 @@ def save_tables_for_inspection(tables):
         else:
             file_name = f"tab_{idx:03d}_pag_{page_start:03d}_a_{page_end:03d}.csv"
 
-        out_path = os.path.join(OUT_DIR, file_name)
+        out_path = os.path.join(out_dir, file_name)
         df.to_csv(out_path, index=False, header=False, sep=";")
 
 
 if __name__ == "__main__":
-    try:
-        for filename in os.listdir(OUT_DIR):
-            os.remove(os.path.join(OUT_DIR, filename))
+    if not os.path.exists(PDF_DIR):
+        print(f"Directory non trovata: {PDF_DIR}")
+        exit()
 
-        raw_tables = extract_all_raw_tables(PDF_PATH)
-        valid_tables = filter_invalid_tables(raw_tables)
-        merged_tables = merge_continuation_tables(valid_tables)
-        split_tables = split_tables_by_super_titles(merged_tables)
-        tot_split_tables = split_tables_after_totale(split_tables)
-        
-        for t in tot_split_tables:
-            t["data"] = compress_staggered_columns(t["data"])
+    for pdf_filename in os.listdir(PDF_DIR):
+        if not pdf_filename.lower().endswith('.pdf'):
+            continue
             
-        final_tables = filter_invalid_tables(tot_split_tables)
-        save_tables_for_inspection(final_tables)
+        pdf_path = os.path.join(PDF_DIR, pdf_filename)
+        doc_name = os.path.splitext(pdf_filename)[0]
+        out_dir = os.path.join(BASE_OUT_DIR, doc_name)
+        
+        if os.path.exists(out_dir):
+            for filename in os.listdir(out_dir):
+                file_path = os.path.join(out_dir, filename)
+                if os.path.isfile(file_path):
+                    os.remove(file_path)
+        else:
+            os.makedirs(out_dir, exist_ok=True)
+            
+        try:
+            print(f"\n--- Elaborazione di: {pdf_filename} ---")
+            raw_tables = extract_all_raw_tables(pdf_path)
+            valid_tables = filter_invalid_tables(raw_tables)
+            
+            # Apply column compression to all valid tables before merging, to handle cases where the same logical column is split into multiple staggered columns due to joined cells
+            for t in valid_tables:
+                t["data"] = compress_staggered_columns(t["data"])
+                t["data"] = remove_consecutive_duplicates(t["data"])
+            
+            merged_tables = merge_continuation_tables(valid_tables)
+            
+            split_tables = split_tables_by_super_titles(merged_tables)
+            tot_split_tables = split_tables_after_totale(split_tables)
+                
+            final_tables = filter_invalid_tables(tot_split_tables)
+            save_tables_for_inspection(final_tables, out_dir)
+            print(f"Tabelle salvate in: {out_dir}")
 
-    except FileNotFoundError:
-        print(f"File non trovato: {PDF_PATH}")
+        except Exception as e:
+            print(f"Errore durante l'elaborazione di {pdf_filename}: {e}")
