@@ -182,7 +182,7 @@ if __name__ == "__main__":
                 target_model = "gpt-4o"
                 print(f"({num_rows} rows, {num_cols} columns). Selected model: {target_model}")
             else:
-                target_model = "gpt-4o"
+                target_model = "gpt-4o-mini"
                 print(f"({num_rows} rows, {num_cols} columns). Selected model: {target_model}")
 
             while True:
