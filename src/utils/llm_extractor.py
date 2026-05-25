@@ -6,7 +6,7 @@ from typing import List, Optional
 from openai import OpenAI
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(override=True) 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 MAX_ROWS_MINI = 50
@@ -16,8 +16,9 @@ MAX_COLS_MINI = 10
 # Since the CSV tables are in Italian, the field names, descriptions, and prompts are also in Italian to improve extraction quality.
 class Criterio(BaseModel):
     parametro: str = Field(description="Descrizione chiara del criterio di valutazione (es. morbidezza, assenza odore, traspirabilità)")
-    punteggio_massimo: Optional[float] = Field(None, description="Punteggio massimo attribuibile. Estrai solo il valore numerico in formato standard (es. 15.5)")
+    punteggio_massimo: Optional[float] = Field(None, description="Punteggio massimo attribuibile o coefficiente. Estrai solo il valore numerico in formato standard (es. 15.5 o 1.0)")
     modalita_attribuzione: Optional[str] = Field(None, description="Lettera o formula (es. 'D', 'Q', 'Tabellare'). Se non presente, lascia null.")
+    dettagli_valutazione: Optional[str] = Field(None, description="Testo aggiuntivo sui giudizi qualitativi, scale di decurtazione o descrizioni dei livelli di punteggio (es. 'Giudizio: Eccellente', 'Scarsa rispondenza').")
 
 class ElementoTabella(BaseModel):
     numeri_lotto: List[str] = Field(
@@ -49,14 +50,22 @@ class ElementoTabella(BaseModel):
         description="Classificazione Nazionale Dispositivi (CND). Solo il codice."
     )
 
-    descrizione_lotto: Optional[str] = Field(None, description="Il nome del prodotto, descrizione dell'oggetto del lotto. INCLUDI QUI anche eventuali informazioni accessorie, note o specifiche aggiuntive che non rientrano negli altri campi, in modo da non perdere dettagli importanti presenti nella tabella.")
+    descrizione_lotto: Optional[str] = Field(None, description="Il nome del prodotto, descrizione dell'oggetto del lotto.")
+    
+    altri_dettagli: Optional[str] = Field(
+        None, description="In questo campo devi inserire TUTTI i possibili dettagli, note, specificazioni aggiuntive presenti nella tabella in modo da non lasciare MAI informazioni perse. Qualsiasi cosa che non va altrove va qui."
+    )
     
     fabbisogno_totale: Optional[float] = Field(
-        None, description="Quantità o fabbisogno richiesto. Converti in numero puro. Es: '1.500 pz' -> 1500.0"
+        None, description="Quantità o fabbisogno richiesto. Converti in numero puro. Es: '1.500 pz' -> 1500.0. Usa questo campo SOLO per il pezzaggio del bene da fornire, non per importi monetari."
     )
 
     importo_base_asta: Optional[float] = Field(
-        None, description="Importo a base d'asta. Converti stringhe italiane ('1.234,56 €') in float standard (1234.56)."
+        None, description="Importo a base d'asta. Converti stringhe italiane ('1.234,56 €') in float standard (1234.56). Usa questo campo SOLO per il vero importo base. Le cauzioni o altri importi vanno in altri_dettagli."
+    )
+
+    importo_totale: Optional[float] = Field(
+        None, description="Se presente, estrai l'importo totale stimato per il lotto. Converti stringhe italiane ('100.234,56 €') in float standard (1001234.56). Usa questo campo SOLO se è chiaro che rappresenta un totale complessivo, altrimenti lascia null e inserisci qualsiasi importo ambiguo in altri_dettagli."
     )
 
     strutture_destinatarie: List[str] = Field(
@@ -91,9 +100,10 @@ def process_csv_to_json(raw_csv_text: str, doc_name: str, model_name: str = "gpt
     2. NUMERI ITALIANI: Gli importi usano il punto per le migliaia e la virgola per i decimali (es. "1.345,50 €"). Convertili in float standard (1345.50).
     3. ASSENZA DI DATI: Se un dato non è presente, restituisci null o []. Non inventare e non inserire N/A o simili.
     4. STRUTTURE DESTINATARIE: Se ci sono colonne con Ospedali e quantità in riga, estrai il nome dell'ospedale.
-    5. CRITERI: Nei `criteri_associati` inserisci solo i reali criteri di valutazione della gara (es. qualità, prezzo). Non confondere i nomi dei reparti ospedalieri, l'allocazione logistica o i quantitativi totali per criteri e punteggi.
+    5. CRITERI: Nei `criteri_associati` inserisci i reali criteri di valutazione della gara (es. qualità, prezzo, inclusi punteggi, pesi, e le voci come 'Giudizio: Eccellente' o 'Valore del coefficiente'). Non confondere i nomi dei reparti ospedalieri, l'allocazione logistica o i quantitativi totali per criteri e punteggi.
     6. NON ACCORPARE LE VOCI: Se una tabella ha più righe con lo stesso numero di lotto ma cambiano le "voci" (es. voce 1, voce 2) o le misure/dettagli tecnici, DEVI generare un ElementoTabella separato per ognuna di queste righe.
-    7. INFORMAZIONI ACCESSORIE: Qualsiasi dettaglio, nota o informazione aggiuntiva presente nella tabella che non ha un campo strutturato specifico deve essere accorpata e salvata dentro la `descrizione_lotto`. Non tralasciare testo utile.
+    7. INFORMAZIONI ACCESSORIE: Qualsiasi dettaglio, nota o informazione aggiuntiva presente nella tabella che non ha un campo strutturato specifico deve essere salvata dentro `altri_dettagli`. L'obiettivo è quello di estrarre e copiare tutto il testo utile non allocato altrove per non perdere alcun tipo di informazione a prescindere da cosa sia.
+    8. IMPORTI E QUANTITÀ: Estrai in `importo_base_asta` SOLO l'importo relativo alla fornitura/base d'asta del lotto (escludendo cauzioni o oneri sicurezza). Estrai in `fabbisogno_totale` SOLO la quantità/fabbisogno di dispositivi del lotto. Se trovi altri valori economici, amministrativi o quantitativi ambigui NON inserirli qui ma scrivili descrittivamente in `altri_dettagli` (es. "Cauzione: 50.000€").
     """
 
     try:
@@ -145,6 +155,8 @@ if __name__ == "__main__":
     os.makedirs(BASE_OUT_DIR, exist_ok=True)
 
     for doc_folder in sorted(os.listdir(BASE_IN_DIR)):
+        if doc_folder not in ["capitolato speciale rev. 18.05.2023"]:
+            continue
         doc_path = os.path.join(BASE_IN_DIR, doc_folder)
         # Skip files that are not directories (e.g. .DS_Store)
         if not os.path.isdir(doc_path): 
@@ -170,7 +182,7 @@ if __name__ == "__main__":
                 target_model = "gpt-4o"
                 print(f"({num_rows} rows, {num_cols} columns). Selected model: {target_model}")
             else:
-                target_model = "gpt-4o-mini"
+                target_model = "gpt-4o"
                 print(f"({num_rows} rows, {num_cols} columns). Selected model: {target_model}")
 
             while True:
