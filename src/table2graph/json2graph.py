@@ -55,10 +55,12 @@ def aggregate_jsons_into_memory(base_dir: str):
                             "codice_cig": set(),
                             "codice_cnd": set(),
                             "descrizioni": [],
+                            "altri_dettagli_list": [],
                             "misure": set(),            
                             "confezionamento": set(),   
                             "fabbisogno_totale": element.get('fabbisogno_totale'),
                             "importo_base_asta": element.get('importo_base_asta'),
+                            "importo_totale": element.get('importo_totale'),
                             "strutture_destinatarie": set(),
                             "criteri_associati": []
                         }
@@ -76,6 +78,10 @@ def aggregate_jsons_into_memory(base_dir: str):
                     desc_lotto = element.get('descrizione_lotto')
                     if desc_lotto and desc_lotto not in node["descrizioni"]:
                         node["descrizioni"].append(desc_lotto)
+                        
+                    altri_dett = element.get('altri_dettagli')
+                    if altri_dett and altri_dett not in node["altri_dettagli_list"]:
+                        node["altri_dettagli_list"].append(altri_dett)
 
                     misure = element.get('misure_dettagli_tecnici')
                     if misure: node["misure"].add(misure)
@@ -83,11 +89,21 @@ def aggregate_jsons_into_memory(base_dir: str):
                     conf = element.get('confezionamento')
                     if conf: node["confezionamento"].add(conf)
                         
-                    # Overwrite for fabbisogno_totale and importo_base_asta only if they are None, to preserve the first non-null value found
-                    if node["fabbisogno_totale"] is None:
-                        node["fabbisogno_totale"] = element.get('fabbisogno_totale')
-                    if node["importo_base_asta"] is None:
-                        node["importo_base_asta"] = element.get('importo_base_asta')
+                    # Avoid overwriting existing fabbisogno/importo with None or duplicates
+                    new_fabb = element.get('fabbisogno_totale')
+                    if new_fabb is not None:
+                        if node["fabbisogno_totale"] is None or new_fabb > node["fabbisogno_totale"]:
+                            node["fabbisogno_totale"] = new_fabb
+                            
+                    new_imp = element.get('importo_base_asta')
+                    if new_imp is not None:
+                        if node["importo_base_asta"] is None or new_imp < node["importo_base_asta"]:
+                            node["importo_base_asta"] = new_imp
+
+                    new_tot = element.get('importo_totale')
+                    if new_tot is not None:
+                        if node["importo_totale"] is None or new_tot > node["importo_totale"]:
+                            node["importo_totale"] = new_tot
 
                     # Merge for criteri_associati: avoid duplicates based on 'parametro'
                     existing_criteria = {c['parametro'] for c in node["criteri_associati"]}
@@ -119,12 +135,17 @@ def aggregate_jsons_into_memory(base_dir: str):
                     if desc not in specific_node["descrizioni"]:
                         specific_node["descrizioni"].append(desc)
                         
+                for dett in generic_node["altri_dettagli_list"]:
+                    if dett not in specific_node["altri_dettagli_list"]:
+                        specific_node["altri_dettagli_list"].append(dett)
+                        
                 existing_criteria = {c['parametro'] for c in specific_node["criteri_associati"]}
                 for c in generic_node["criteri_associati"]:
                     if c['parametro'] not in existing_criteria:
                         specific_node["criteri_associati"].append(c)
             
-            # After broadcasting, we can safely remove the generic node
+            # After broadcasting, if specific nodes exist, we safely remove the generic node.
+            # If no specific nodes exist, we keep the generic node to avoid losing its info completely.
             del lot_master[key_gen]
 
     # Similar to "Generico", sometimes a lot appears without a sub_lotto in one table, 
@@ -153,14 +174,16 @@ def aggregate_jsons_into_memory(base_dir: str):
                 specific_node["misure"].update(empty_node["misure"])
                 specific_node["confezionamento"].update(empty_node["confezionamento"])
                 
-                if specific_node["fabbisogno_totale"] is None:
-                    specific_node["fabbisogno_totale"] = empty_node["fabbisogno_totale"]
-                if specific_node["importo_base_asta"] is None:
-                    specific_node["importo_base_asta"] = empty_node["importo_base_asta"]
+                # Avoid cloning amounts to sub-lots: if a SubLotto already has its own fabbisogno/importo, we keep it.
+                # Otherwise, we leave it as None, and the amount will remain attached to the Parent Lotto in Neo4j
                 
                 for desc in empty_node["descrizioni"]:
                     if desc not in specific_node["descrizioni"]:
                         specific_node["descrizioni"].append(desc)
+                        
+                for dett in empty_node["altri_dettagli_list"]:
+                    if dett not in specific_node["altri_dettagli_list"]:
+                        specific_node["altri_dettagli_list"].append(dett)
                         
                 existing_criteria = {c['parametro'] for c in specific_node["criteri_associati"]}
                 for c in empty_node["criteri_associati"]:
@@ -179,11 +202,13 @@ def aggregate_jsons_into_memory(base_dir: str):
         v["codice_cnd"] = list(v["codice_cnd"])
         v["strutture_destinatarie"] = list(v["strutture_destinatarie"])
         v["descrizione_completa"] = " | ".join(v["descrizioni"])
+        v["altri_dettagli"] = " | ".join(v["altri_dettagli_list"])
         v["misure_dettagli"] = " | ".join(list(v["misure"]))
         v["confezionamento_dettagli"] = " | ".join(list(v["confezionamento"]))
         
         # Remove the intermediate fields that were used for merging but are not needed in Neo4j
         del v["descrizioni"]
+        del v["altri_dettagli_list"]
         del v["misure"]
         del v["confezionamento"]
         
