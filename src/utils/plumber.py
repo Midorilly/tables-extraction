@@ -3,14 +3,12 @@ import pandas as pd
 import os
 import re
 
-PDF_DIR = "../../data/pdf/capitolati"
-BASE_OUT_DIR = "../../data/tables_exploration"
-os.makedirs(BASE_OUT_DIR, exist_ok=True)
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
 
-# Some keywords that often indicate a "super-title" or category header that spans the entire width of the table
-TITLE_BREAK_KEYWORDS = [
-    'quadro economico', 'riepilogo', 'prospetto', 'totale complessivo',
-]
+PDF_DIR = os.path.join(PROJECT_ROOT, "data", "pdf", "capitolati")
+BASE_OUT_DIR = os.path.join(PROJECT_ROOT, "data", "tables_exploration")
+os.makedirs(BASE_OUT_DIR, exist_ok=True)
 
 # Some keywords that often indicate a new column header
 HEADER_BREAK_KEYWORDS = [
@@ -172,88 +170,28 @@ def merge_continuation_tables(raw_tables):
     print(f"Fusione completata. Le tabelle sono passate da {len(raw_tables)} a {len(merged_tables)}.")
     return merged_tables
 
-def split_tables_by_super_titles(tables):
-    """Split tables that contain multiple "super-title" rows (rows with only 1 non-empty cell) which likely indicate category headers."""
-    
-    split_tables_list = []
-    
-    for table_info in tables:
-        df = table_info["data"]
-        if df.empty:
-            split_tables_list.append(table_info)
-            continue
-        
-        # Identify all rows that look like super-titles (only 1 non-empty cell) and are followed within the next 3 rows by a "data row" (with > 1 non-empty cells)
-        super_title_indices = []
-        for idx in range(len(df)):
-            row = df.iloc[idx]
-            non_empty_cells = [c for c in row if pd.notna(c) and str(c).strip() != ""]
-            
-            # Check if the previous row was a super-title to avoid splitting on consecutive super-titles that likely belong to the same header block
-            prev_was_single = False
-            if idx > 0:
-                prev_row = df.iloc[idx - 1]
-                prev_non_empty = [c for c in prev_row if pd.notna(c) and str(c).strip() != ""]
-                # Check if the previous row is a super-title (only 1 non-empty cell) to avoid splitting on consecutive super-titles that likely belong to the same header block
-                if len(prev_non_empty) == 1 and pd.notna(prev_row.iloc[0]) and str(prev_row.iloc[0]).strip() != "":
-                    prev_was_single = True
-            
-            # A super-title is a row with only 1 non-empty cell, but we only consider it a valid split point if within the next 3 rows we find a "data row" with more than 1 non-empty cell, 
-            # to avoid splitting on rows that are just part of a multi-line header.
-            if len(non_empty_cells) == 1 and pd.notna(row.iloc[0]) and str(row.iloc[0]).strip() != "" and not prev_was_single:
-                # Look ahead in the next 3 rows to see if we find a data row with more than 1 non-empty cell
-                found_data_row = False
-                for forward_idx in range(idx + 1, min(idx + 4, len(df))):
-                    future_row = df.iloc[forward_idx]
-                    future_non_empty = [c for c in future_row if pd.notna(c) and str(c).strip() != ""]
-                    if len(future_non_empty) > 1:
-                        found_data_row = True
-                        break
-                
-                if found_data_row:
-                    super_title_indices.append(idx)
-        
-        # If there are 0 or 1 super-title indices, or if the only super-title is at the very top of the table, we assume this table doesn't need to be split
-        if len(super_title_indices) <= 1 and not (len(super_title_indices) == 1 and super_title_indices[0] > 0):
-            split_tables_list.append(table_info)
-            continue
-            
-        # Define the first category index as the first super-title index that is not at the very top of the table 
-        # (if the first super-title is at index 0, we skip it and take the next one as the first category index)
-        if len(super_title_indices) > 0 and super_title_indices[0] == 0:
-            if len(super_title_indices) < 2:
-                split_tables_list.append(table_info)
-                continue
-            first_category_idx = super_title_indices[1]
-            category_indices = super_title_indices[1:]
-        else:
-            first_category_idx = super_title_indices[0]
-            category_indices = super_title_indices
-            
-        # The common header is everything that comes before the first category
-        common_header_df = df.iloc[:first_category_idx]
-        
-        new_tables_created = False
-        for i, start_idx in enumerate(category_indices):
-            end_idx = category_indices[i+1] if i + 1 < len(category_indices) else len(df)
-            sub_df = df.iloc[start_idx:end_idx]
-            
-            # Merge the common header with the sub-table, aligning columns by position and filling missing columns with NaN
-            combined_df = pd.concat([common_header_df, sub_df], ignore_index=True)
-            
-            new_t_info = table_info.copy()
-            new_t_info["data"] = combined_df
-            split_tables_list.append(new_t_info)
-            new_tables_created = True
-            
-        if not new_tables_created:
-            split_tables_list.append(table_info)
-
-    print(f"Divisione completata. Le tabelle sono passate da {len(tables)} a {len(split_tables_list)}.")
-    return split_tables_list
-
 def split_tables_after_totale(tables):
-    """Split tables after any row containing the word 'totale' (accommodating strings like 'totale complessivo' or 'totale glucometri')."""
+    """Split tables after any row containing the word 'totale' (accommodating strings like 'totale complessivo' or 'totale glucometri'), skipping header rows."""
+    
+    def is_header_like_row(row):
+        cells = [str(c).strip().lower() for c in row if pd.notna(c) and str(c).strip() != ""]
+        if not cells:
+            return False
+
+        row_text = " ".join(cells)
+        
+        # Check if the row contains any of the header keywords as whole words (not as part of another word), which is a strong signal that it's an actual header row and not a "totale" row.
+        has_header_keyword = any(
+            re.search(r'(?:\b|^)' + re.escape(kw) + r'(?:\b|\W|$)', row_text)
+            for kw in HEADER_BREAK_KEYWORDS
+        )
+        
+        # Check if the row has a significant amount of text (e.g., more than 40 characters when non-alphabetic characters are removed), which can indicate it's a descriptive header rather than a data row with "totale".
+        text_only = re.sub(r'[^a-z]', '', row_text)
+        is_text_heavy = len(text_only) > 40
+        
+        return has_header_keyword and is_text_heavy
+
     split_list = []
     for table_info in tables:
         df = table_info["data"]
@@ -266,14 +204,20 @@ def split_tables_after_totale(tables):
         
         for idx in range(len(df)):
             row_has_totale = False
-            for cell in df.iloc[idx]:
-                if pd.notna(cell):
-                    cell_text = str(cell).strip().lower()
-                    # Trigger the split if the cell explicitly STARTS with "totale", "iva", "imposta" etc.
-                    # so that rows like "IVA 22%" interspersed between "Totale" rows are kept in the same block
-                    if cell_text.startswith(('totale', 'iva', 'imposta', 'sconto', 'ribasso')) and len(cell_text) < 40:
-                        row_has_totale = True
-                        break
+            row = df.iloc[idx]
+            
+            # If we are in the first 2 rows, or if the row looks like a header, we skip the "totale" check to avoid splitting on header rows that might contain the word "totale" as part of a descriptive title. We only want to trigger splits on actual data rows that contain "totale".
+            row_is_header = (idx < 2) or is_header_like_row(row)
+
+            if not row_is_header:
+                for cell in row:
+                    if pd.notna(cell):
+                        cell_text = str(cell).strip().lower()
+                        # Trigger the split if the cell explicitly STARTS with "totale", "iva", "imposta" etc.
+                        # so that rows like "IVA 22%" interspersed between "Totale" rows are kept in the same block
+                        if cell_text.startswith(('totale', 'iva', 'imposta', 'sconto', 'ribasso')) and len(cell_text) < 40:
+                            row_has_totale = True
+                            break
             
             if row_has_totale:
                 in_totale_block = True
@@ -345,6 +289,7 @@ def remove_consecutive_duplicates(df):
     mask = (df != df.shift(1)).any(axis=1)
     # Keep only the rows where the mask is True, which means they are different from the previous row, and reset the index.
     return df[mask].reset_index(drop=True)
+
 def filter_invalid_tables(tables):
     """Filter out tables that are essentially just a single row or a single column after dropping empty cells."""
     valid_tables = []
@@ -411,9 +356,7 @@ if __name__ == "__main__":
                 t["data"] = remove_consecutive_duplicates(t["data"])
             
             merged_tables = merge_continuation_tables(valid_tables)
-            
-            split_tables = split_tables_by_super_titles(merged_tables)
-            tot_split_tables = split_tables_after_totale(split_tables)
+            tot_split_tables = split_tables_after_totale(merged_tables)
                 
             final_tables = filter_invalid_tables(tot_split_tables)
             save_tables_for_inspection(final_tables, out_dir)
