@@ -20,7 +20,8 @@ Questa funzione rimuove tutte quelle tabelle che, al netto delle celle vuote, ri
 
 ### 3. Compressione delle Colonne Sfalsate (`compress_staggered_columns`)
 Se la libreria estrae il testo suddividendolo su due o più colonne (in cui una colonna ha dei valori `NA` dove l'altra ha dati, e viceversa), la funzione **fonde le colonne assieme**. 
-*Condizione:* le colonne vengono fuse solo se non hanno "collisioni", ovvero se in nessuna riga entrambe possiedono un valore valido contemporaneamente.
+La fusione avviene solo quando le colonne non hanno collisioni, cioè quando non esiste alcuna riga in cui entrambe contengono un valore valido contemporaneamente.
+In più, il merge viene evitato quando la coppia di colonne sembra rappresentare una gerarchia padre/figlio, per esempio una colonna con identificativi numerici principali e una con sotto-voci alfabetiche o composte.
 
 ### 4. Rimozione dei Duplicati (`remove_consecutive_duplicates`)
 L'estrazione da PDF può generare righe identiche adiacenti, specialmente in presenza di celle multi-line. Questa funzione pulisce la tabella mantenendo solo la prima occorrenza di righe identiche continue.
@@ -32,23 +33,15 @@ Se una singola tabella logica viene stampata a cavallo tra due o più pagine, `p
 - **Controllo Numerico:** Verifica se la riga "sospetta" contiene stringhe alfanumeriche o numeriche attaccate (come Codici CIG o Importi) escludendo spazi e parole pure. Se sì, capisce che si tratta di *dati* (continuazione) e non di una nuova intestazione, unendo le tabelle.
 - **Riallineamento (`align_and_concat`):** Se per via del formato le due porzioni della tabella hanno un numero diverso di colonne, la funzione cerca di incastrarle spingendo la tabella scarna a sinistra oppure mappando l'indice delle colonne valide nell'ultima riga della porzione precedente.
 
-### 6. Divisione per Categorie Interne (`split_tables_by_super_titles`)
-Molto spesso in questi PDF ci sono macro-tabelle che contengono diverse sezioni divise da righe "titolo" (con una singola grande cella fusa che copre tutta la larghezza, ad es. "CEROTTI" o "BENDE ADESIVE").
-La funzione intercetta questi "Super-titoli" (ossia righe con 1 sola cella popolata poste nella prima colonna, che anticipano righe di dati veri):
-- Identifica l'**intestazione comune** originaria (prima del primo super-titolo).
-- **Spezza** la macro-tabella in sotto-tabelle.
-- **Incolla l'intestazione comune** in cima a ciascuna delle sotto-tabelle create, permettendo così di non perdere i nomi delle colonne ("Punteggio", "Descrizione", etc.).
-
-### 7. Divisione post "Totale" (`split_tables_after_totale`)
+### 6. Divisione post "Totale" (`split_tables_after_totale`)
 Alcuni blocchi finali delle tabelle (riepiloghi) contengono filotti di righe che iniziano con "Totale", "IVA", "Imposta", "Sconto".
 Dopo che il blocco dei "Totali" finisce e inizia nuovamente un set di righe dati normali, lo script divide la tabella per separarli in entità logiche distinte, così che i "Totali" chiudano in bellezza le tabelle di pertinenza.
 
-### 8. Filtro Definitivo e Salvataggio (`save_tables_for_inspection`)
+### 7. Filtro Definitivo e Salvataggio (`save_tables_for_inspection`)
 - Esegue un'ultima passata di `filter_invalid_tables` per pulire i residui prodotti dagli step di spezzamento.
 - Salva ogni tabella estratta come file `.csv` nominandola appropriatamente in base alla tabella origine e all'intervallo di pagine da cui è stata presa (es. `tab_000_pag_001_a_002.csv`). Il separatore dei campi è il `;` e i valori `NA` di pandas vengono trasformati in stringhe vuote.
 
 ## Dizionari e Configurazioni
 
 Nella parte superiore del file, lo script si appoggia su costanti cruciali:
-* `TITLE_BREAK_KEYWORDS`: per le stringhe di Titoli Globali ('quadro economico', 'riepilogo', ecc.).
 * `HEADER_BREAK_KEYWORDS`: per individuare intestazioni che bloccano le fusioni indesiderate tra tabelle concettualmente diverse o che aiutano a capire che è iniziata una matrice nuova. 
