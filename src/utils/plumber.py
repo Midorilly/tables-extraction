@@ -258,6 +258,28 @@ def compress_staggered_columns(df):
         
     merged = []
     current_col = df_clean[cols[0]].copy()
+
+    def looks_like_hierarchy_boundary(left_col, right_col):
+        """Return True when the two columns look like a main-item / sub-item structure and should not be compressed."""
+        left_values = [str(v).strip().lower() for v in left_col if pd.notna(v) and str(v).strip() != ""]
+        right_values = [str(v).strip().lower() for v in right_col if pd.notna(v) and str(v).strip() != ""]
+
+        if not left_values or not right_values:
+            return False
+
+        # Main rows often start with numeric identifiers like 6, 7, 8.
+        left_numeric_ids = sum(v.isdigit() for v in left_values)
+        # Sub-rows often start with single letters like a, b, c or 1a, 1b or roman numerals or 1.1, 1.2 etc
+        right_letter_ids = sum(len(v) == 1 and v.isalpha() for v in right_values)
+        right_composite_ids = sum(len(v) > 1 and v[0].isdigit() and v[1].isalpha() for v in right_values)
+        right_roman_ids = sum(re.match(r'^(?=[MDCLXVI])M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$', v) is not None for v in right_values)
+        right_dot_ids = sum(re.match(r'^\d+\.\d+$', v) is not None for v in right_values)
+
+        if left_numeric_ids / len(left_values) >= 0.5 and right_letter_ids / len(right_values) >= 0.5:
+            return True
+
+        return False
+    
     
     for i in range(1, len(cols)):
         next_col = df_clean[cols[i]]
@@ -265,7 +287,7 @@ def compress_staggered_columns(df):
         # There is an overlap if there is at least one row where both current_col and next_col have non-NA values
         overlap = (current_col.notna() & next_col.notna()).any()
         
-        if not overlap:
+        if not overlap and not looks_like_hierarchy_boundary(current_col, next_col):
             # If there is no overlap, we can safely merge the two columns by filling NA values in current_col with values from next_col
             current_col = current_col.combine_first(next_col)
         else:
