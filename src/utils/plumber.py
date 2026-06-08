@@ -7,7 +7,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
 
 PDF_DIR = os.path.join(PROJECT_ROOT, "data", "pdf", "capitolati")
-BASE_OUT_DIR = os.path.join(PROJECT_ROOT, "data", "tables_exploration")
+BASE_OUT_DIR = os.path.join(PROJECT_ROOT, "data", "extractions", "custom", "pdfplumber_csv")
 os.makedirs(BASE_OUT_DIR, exist_ok=True)
 
 # Some keywords that often indicate a new column header
@@ -338,9 +338,9 @@ def save_tables_for_inspection(tables, out_dir):
         df = table_info["data"].replace(pd.NA, "")
 
         if page_start == page_end:
-            file_name = f"tab_{idx:03d}_pag_{page_start:03d}.csv"
+            file_name = f"tab_{idx + 1:03d}_pag_{page_start:03d}.csv"
         else:
-            file_name = f"tab_{idx:03d}_pag_{page_start:03d}_a_{page_end:03d}.csv"
+            file_name = f"tab_{idx + 1:03d}_pag_{page_start:03d}_{page_end:03d}.csv"
 
         out_path = os.path.join(out_dir, file_name)
         df.to_csv(out_path, index=False, header=False, sep=";")
