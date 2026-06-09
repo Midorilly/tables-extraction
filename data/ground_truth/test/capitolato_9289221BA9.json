@@ -1,0 +1,51 @@
+{
+    "document_name": "capitolato_9289221BA9.pdf",
+    "metrics_summary": {
+        "total_tables": 2,
+        "total_lots": 9,
+        "total_sublots": 0
+    },
+    "logical_tables": [
+        {
+            "table_id": 1,
+            "description": "Descrizione lotti",
+            "pages_spanned": [
+                16
+            ],
+            "headers": {
+                "is_multirow": false,
+                "expected_columns": [
+                    "LOTTO",
+                    "Classe",
+                    "CND",
+                    "DESCRIZIONE CND",
+                    "Denominazione prodotto",
+                    "Descrizione",
+                    "Contenuto",
+                    "Modalità e condizioni particolari di fornitura",
+                    "q.tà c.va",
+                    "importo base d'asta"
+                ]
+            }
+        },
+        {
+            "table_id": 2,
+            "description": "Caratteristiche Lotto 5",
+            "pages_spanned": [
+                17
+            ],
+            "headers": {
+                "is_multirow": true,
+                "expected_columns": {
+                    "0": [
+                        "caratteristiche specifiche per il lotto 5"
+                    ],
+                    "1": [
+                        "Rif.",
+                        "DESCRIZIONE"
+                    ]
+                }
+            }
+        }
+    ]
+}
