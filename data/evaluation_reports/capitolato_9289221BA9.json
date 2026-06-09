@@ -1,0 +1,63 @@
+{
+    "document_name": "capitolato_9289221BA9.json",
+    "methods": {
+        "baseline_docling": {
+            "tables_and_fragmentation": {
+                "expected_logical_tables": 2,
+                "extracted_useful_tables_count": 2,
+                "extracted_useful_tables_list": [
+                    "Descrizione lotti",
+                    "Caratteristiche Lotto 5"
+                ],
+                "useless_tables_noise_count": 0,
+                "useless_tables_noise_list": [],
+                "fragmentation_extra_fragments": 0
+            },
+            "header_integrity": {
+                "expected_sequence_length": 13,
+                "predicted_sequence_length": 12,
+                "perfectly_aligned_columns": 12,
+                "alignment_score_percentage": 92.3
+            },
+            "hierarchy_and_entities": {
+                "lots_expected": 0,
+                "lots_found": 0,
+                "lot_recall_percentage": 0,
+                "missing_lots_ids": [],
+                "sublots_expected": 0,
+                "sublots_mapped_correctly": 0,
+                "sublot_hierarchy_score_percentage": 0,
+                "hierarchy_losses_details": []
+            }
+        },
+        "custom_pipeline": {
+            "tables_and_fragmentation": {
+                "expected_logical_tables": 2,
+                "extracted_useful_tables_count": 2,
+                "extracted_useful_tables_list": [
+                    "Descrizione lotti",
+                    "Caratteristiche Lotto 5"
+                ],
+                "useless_tables_noise_count": 0,
+                "useless_tables_noise_list": [],
+                "fragmentation_extra_fragments": 0
+            },
+            "header_integrity": {
+                "expected_sequence_length": 13,
+                "predicted_sequence_length": 13,
+                "perfectly_aligned_columns": 13,
+                "alignment_score_percentage": 100.0
+            },
+            "hierarchy_and_entities": {
+                "lots_expected": 0,
+                "lots_found": 0,
+                "lot_recall_percentage": 0,
+                "missing_lots_ids": [],
+                "sublots_expected": 0,
+                "sublots_mapped_correctly": 0,
+                "sublot_hierarchy_score_percentage": 0,
+                "hierarchy_losses_details": []
+            }
+        }
+    }
+}
