@@ -63,7 +63,7 @@ I capitolati medici presentano spesso tabelle con layout complessi, forte indent
 
 Nel documento *FVG_capitolato_da_pag_77.pdf*, ad esempio, la tabella dei fabbisogni presenta una colonna per il "Lotto" principale e una sotto-colonna "Voce" per i sublotti (a, b, c), affiancati da testi descrittivi pesantemente indentati.
 
-![sscreen2](secondo_fvg.png)
+![screen2](secondo_fvg.png)
 
 ### Baseline
 
