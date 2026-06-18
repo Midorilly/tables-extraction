@@ -21,6 +21,10 @@ class Criterio(BaseModel):
     dettagli_valutazione: Optional[str] = Field(None, description="Testo aggiuntivo sui giudizi qualitativi, scale di decurtazione o descrizioni dei livelli di punteggio (es. 'Giudizio: Eccellente', 'Scarsa rispondenza').")
 
 class ElementoTabella(BaseModel):
+    numero_gara: Optional[str] = Field(
+        None, description="Il numero identificativo della gara o della procedura (es. '7855306', '23PRE002'). Se non è presente, lascia null."
+    )
+
     numeri_lotto: List[str] = Field(
         description="""ID o numeri del lotto. DISTINGUI ATTENTAMENTE tra range e liste discrete: 
         1) RANGE CONTINUI ('da', 'a', '-', 'al'): es. 'da 1 a 4' -> espandi in ['1', '2', '3', '4']. 
@@ -30,6 +34,10 @@ class ElementoTabella(BaseModel):
 
     sub_lotto: Optional[str] = Field(
         None, description="Eventuale specificazione di 'voce', 'sub-lotto', 'parte' o 'riga'. Indica SOLO il numero o la lettera: es. 'voce A' -> 'A', 'voce 1' -> '1', 'sublotto 2' -> '2'."
+    )
+
+    durata_contratto_mesi: Optional[int] = Field(
+        None, description="La durata complessiva dell'appalto/fornitura espressa in mesi. Cerca nel testo adiacente o nelle intestazioni (es. 'per 24 mesi' -> 24, 'per 48 mesi' -> 48, 'biennale' -> 24)."
     )
 
     misure_dettagli_tecnici: Optional[str] = Field(
@@ -150,13 +158,11 @@ def preview_table(csv_path: str):
 if __name__ == "__main__":
     # set base directories relative to the script location 
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    BASE_IN_DIR = os.path.abspath(os.path.join(script_dir, "../../data/tables_exploration"))
+    BASE_IN_DIR = os.path.abspath(os.path.join(script_dir, "../../data/extractions/custom/pdfplumber_csv/test"))
     BASE_OUT_DIR = os.path.abspath(os.path.join(script_dir, "../../data/json_normalized"))
     os.makedirs(BASE_OUT_DIR, exist_ok=True)
 
     for doc_folder in sorted(os.listdir(BASE_IN_DIR)):
-        if doc_folder not in ["capitolato speciale rev. 18.05.2023"]:
-            continue
         doc_path = os.path.join(BASE_IN_DIR, doc_folder)
         # Skip files that are not directories (e.g. .DS_Store)
         if not os.path.isdir(doc_path): 

@@ -25,7 +25,7 @@ def aggregate_jsons_into_memory(base_dir: str):
             continue
         
         for json_file in sorted(os.listdir(doc_path)):
-            if not json_file.endswith('.json'): 
+            if not json_file.endswith('.json') or json_file.startswith('_debug'):
                 continue
 
             file_path = os.path.join(doc_path, json_file)
@@ -52,8 +52,10 @@ def aggregate_jsons_into_memory(base_dir: str):
                             "documento": document,
                             "numero_lotto": num,
                             "sub_lotto": sub_lotto,
+                            "numero_gara": element.get('numero_gara'),
                             "codice_cig": set(),
                             "codice_cnd": set(),
+                            "durata_contratto_mesi": element.get('durata_contratto_mesi'),
                             "descrizioni": [],
                             "altri_dettagli_list": [],
                             "misure": set(),            
@@ -104,6 +106,10 @@ def aggregate_jsons_into_memory(base_dir: str):
                     if new_tot is not None:
                         if node["importo_totale"] is None or new_tot > node["importo_totale"]:
                             node["importo_totale"] = new_tot
+                    
+                    new_durata = element.get('durata_contratto_mesi')
+                    if new_durata is not None and node["durata_contratto_mesi"] is None:
+                        node["durata_contratto_mesi"] = new_durata
 
                     # Merge for criteri_associati: avoid duplicates based on 'parametro'
                     existing_criteria = {c['parametro'] for c in node["criteri_associati"]}
@@ -130,6 +136,8 @@ def aggregate_jsons_into_memory(base_dir: str):
                 specific_node["strutture_destinatarie"].update(generic_node["strutture_destinatarie"])
                 specific_node["misure"].update(generic_node["misure"])
                 specific_node["confezionamento"].update(generic_node["confezionamento"])
+                if generic_node["durata_contratto_mesi"] is not None and specific_node["durata_contratto_mesi"] is None:
+                    specific_node["durata_contratto_mesi"] = generic_node["durata_contratto_mesi"]
                 
                 for desc in generic_node["descrizioni"]:
                     if desc not in specific_node["descrizioni"]:
@@ -176,6 +184,9 @@ def aggregate_jsons_into_memory(base_dir: str):
                 
                 # Avoid cloning amounts to sub-lots: if a SubLotto already has its own fabbisogno/importo, we keep it.
                 # Otherwise, we leave it as None, and the amount will remain attached to the Parent Lotto in Neo4j
+
+                if empty_node["durata_contratto_mesi"] is not None and specific_node["durata_contratto_mesi"] is None:
+                    specific_node["durata_contratto_mesi"] = empty_node["durata_contratto_mesi"]
                 
                 for desc in empty_node["descrizioni"]:
                     if desc not in specific_node["descrizioni"]:
@@ -211,6 +222,10 @@ def aggregate_jsons_into_memory(base_dir: str):
         del v["altri_dettagli_list"]
         del v["misure"]
         del v["confezionamento"]
+
+        if v["importo_totale"] is None:
+            # to avoid division with null in Neo4j
+            v["importo_totale"] = v["importo_base_asta"]
         
         final_lots.append(v)
 
@@ -224,6 +239,7 @@ def populate_neo4j(driver, lots_to_load):
         print("Mapping Criteria relationships...")
         session.run(neo4j_query_criteria, batch=lots_to_load)
 
+
 if __name__ == "__main__":
     # Il percorso base deve essere relativo alla root del progetto (da dove eseguiamo),
     # o potremmo calcolarlo rispetto a questo file.
@@ -232,11 +248,21 @@ if __name__ == "__main__":
     refactored_lots = aggregate_jsons_into_memory(BASE_JSON_DIR)
     print(f"Found {len(refactored_lots)} unique Lotto nodes.")
 
-    # Debug rapido salvando l'aggregato per ispezione visiva
-    debug_path = "debug_lotti_aggregati.json"
-    with open(debug_path, "w", encoding="utf-8") as x:
-        json.dump(refactored_lots, x, indent=2, ensure_ascii=False)
-    print(f"Salvato file di debug dell'aggregazione su {debug_path}")
+    # One debug file for each capitolato
+    lots_by_document = {}
+    for lot in refactored_lots:
+        doc_name = lot["documento"]
+        if doc_name not in lots_by_document:
+            lots_by_document[doc_name] = []
+        lots_by_document[doc_name].append(lot)
+
+    for doc_name, lots in lots_by_document.items():
+        doc_folder_path = os.path.join(BASE_JSON_DIR, doc_name)
+        os.makedirs(doc_folder_path, exist_ok=True) 
+        
+        debug_path = os.path.join(doc_folder_path, "_debug_aggregato.json")
+        with open(debug_path, "w", encoding="utf-8") as f:
+            json.dump(lots, f, indent=2, ensure_ascii=False)
 
     driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
     try:
