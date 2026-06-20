@@ -20,17 +20,17 @@ llm = ChatOpenAI(model="gpt-4o", temperature=0.0)
 custom_template = CYPHER_GENERATION_PROMPT.template + """
 CRITICAL RULES AND EXAMPLES FOR THIS MEDICAL DATABASE:
 
-1. STEMMING (MANDATORY): Always extract max 4-5 letters of keywords and use `AND`. 
+1. STEMMING: Always extract max 4-5 letters of keywords and use `AND`. 
    DO NOT USE `OR`.
-   Correct Example: `WHERE toLower(l.descrizione) CONTAINS 'siri' AND toLower(l.descrizione) CONTAINS 'sott'`
+   Correct Example for 'guanti sterili': `WHERE toLower(l.descrizione) CONTAINS 'guant' AND toLower(l.descrizione) CONTAINS 'ster'`
 
-2. CIG AND CND ONTOLOGY (MANDATORY): CIG and CND are leaf nodes. They NEVER connect to each other. They both connect to Lotto or SubLotto.
+2. CIG AND CND ONTOLOGY: CIG and CND are leaf nodes. They NEVER connect to each other. They both connect to Lotto or SubLotto.
    Correct Example: `MATCH (l)-[:HA_CIG]->(cig:CIG {{codice: '123'}}) MATCH (l)-[:HA_CND]->(c:CND) RETURN c.codice`
 
-3. SUBLOTTO HANDLING (MANDATORY): Sublots (e.g. "Lotto 3B") often don't have their own properties. If you query a Sublotto, always extract properties from the parent Lotto if missing.
+3. SUBLOTTO HANDLING: Sublots (e.g. "Lotto 3B") often don't have their own properties. If you query a Sublotto, always extract properties from the parent Lotto if missing.
    Correct Example: `MATCH (l:Lotto {{id_lotto: '2'}})-[:HA_SUBLOTTO]->(s:SubLotto {{sub_lotto: 'C'}}) RETURN l.importo_base_asta / s.fabbisogno_totale`
 
-4. CRITERIA RELATIONSHIP (MANDATORY): You must use the `r` variable for scores.
+4. CRITERIA RELATIONSHIP: You must use the `r` variable for scores.
    Correct Example: `MATCH (l)-[r:SI_VALUTA_CON]->(c:Criterio) RETURN c.parametro, r.punteggio_massimo, r.dettagli_valutazione`
 
 5. AVOID 'DESCRIZIONE' FOR LOT NUMBERS: Never search for a lot number inside the text description.
@@ -110,7 +110,10 @@ def run_automated_benchmark(input_jsonl_path, output_json_path):
     print(f"\nResults saved to: {output_json_path}")
 
 if __name__ == "__main__":
-    INPUT_FILE = os.path.join(os.path.dirname(__file__), "GraphRAG.jsonl") 
-    OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "rag_results.json")
+    SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+    PROJECT_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
+    
+    INPUT_FILE = os.path.join(PROJECT_ROOT, "data", "benchmarks", "GraphRAG.jsonl") 
+    OUTPUT_FILE = os.path.join(PROJECT_ROOT, "data", "evaluation_reports", "rag_results.json")
     
     run_automated_benchmark(INPUT_FILE, OUTPUT_FILE)

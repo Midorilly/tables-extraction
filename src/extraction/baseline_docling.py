@@ -3,7 +3,7 @@ import pandas as pd
 from docling.document_converter import DocumentConverter
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-PROJECT_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, ".."))
+PROJECT_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
 
 PDF_DIR = os.path.join(PROJECT_ROOT, "data", "pdf", "capitolati")
 BASE_OUT_DIR = os.path.join(PROJECT_ROOT, "data", "extractions", "baseline", "docling_csv")

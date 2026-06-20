@@ -5,7 +5,10 @@ from neo4j import GraphDatabase
 from dotenv import load_dotenv
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
-from src.utils.schema import neo4j_query, neo4j_query_criteria
+try:
+    from schema import neo4j_query, neo4j_query_criteria
+except ImportError:
+    from src.table2graph.schema import neo4j_query, neo4j_query_criteria
 
 env_path = os.path.join(os.path.dirname(__file__), '../../neo4j.env')
 load_dotenv(env_path)

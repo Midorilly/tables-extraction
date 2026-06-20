@@ -2,10 +2,13 @@ import json
 import os
 import difflib
 
-GROUND_TRUTH_DIR = "../data/ground_truth/test"
-DOCLING_DIR = "../data/extractions/baseline/metrics/test"
-PLUMBER_DIR = "../data/extractions/custom/metrics/test"
-REPORTS_OUT_DIR = "../data/evaluation_reports/"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
+
+GROUND_TRUTH_DIR = os.path.join(PROJECT_ROOT, "data", "ground_truth", "test")
+DOCLING_DIR = os.path.join(PROJECT_ROOT, "data", "extractions", "baseline", "metrics", "test")
+PLUMBER_DIR = os.path.join(PROJECT_ROOT, "data", "extractions", "custom", "metrics", "test")
+REPORTS_OUT_DIR = os.path.join(PROJECT_ROOT, "data", "evaluation_reports")
 
 os.makedirs(REPORTS_OUT_DIR, exist_ok=True)
 
