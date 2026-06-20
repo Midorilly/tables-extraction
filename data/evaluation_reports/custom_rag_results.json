@@ -1,0 +1,305 @@
+[
+  {
+    "id": 1,
+    "query": "Riguardo la gara 7855306, qual è il C.I.G. del lotto 1?",
+    "expected_answer": "8409733B34",
+    "generated_answer": "Il C.I.G. del lotto 1 della gara 7855306 è 8409733B34.",
+    "sources": [
+      "Capitolato-8aee0a58.pdf"
+    ],
+    "status": "CORRECT"
+  },
+  {
+    "id": 2,
+    "query": "Riguardo la gara 7855306, qual è il C.I.G. del lotto 2?",
+    "expected_answer": "84097422A4",
+    "generated_answer": "Il C.I.G. del lotto 2 della gara 7855306 è 84097422A4.",
+    "sources": [
+      "Capitolato-8aee0a58.pdf"
+    ],
+    "status": "CORRECT"
+  },
+  {
+    "id": 3,
+    "query": "Riguardo la gara 7855306, qual è il prezzo unitario del lotto 1?",
+    "expected_answer": "0,04 euro",
+    "generated_answer": "Il prezzo unitario del lotto 1 per la gara 7855306 è 0,04.",
+    "sources": [
+      "Capitolato-8aee0a58.pdf"
+    ],
+    "status": "CORRECT"
+  },
+  {
+    "id": 4,
+    "query": "Riguardo la gara 7855306, qual è il prezzo unitario del lotto 2?",
+    "expected_answer": "0,38 euro",
+    "generated_answer": "Il prezzo unitario del lotto 2 per la gara 7855306 è 0.38.",
+    "sources": [
+      "Capitolato-8aee0a58.pdf"
+    ],
+    "status": "CORRECT"
+  },
+  {
+    "id": 5,
+    "query": "Riguardo la gara 7855306, quali sono le misure della siringa sterile monouso tubercolina?",
+    "expected_answer": "G25X0,5X16mm, G30X0,5X13mm",
+    "generated_answer": "G25X0,5X16mm, G30X0,5X13mm sono le misure della siringa sterile monouso tubercolina riguardo la gara 7855306.",
+    "sources": [
+      "Capitolato-8aee0a58.pdf"
+    ],
+    "status": "CORRECT"
+  },
+  {
+    "id": 6,
+    "query": "Riguardo la gara 7855306, quale lotto riguarda l'acquisto di siringhe per iniezioni sottocutanee?",
+    "expected_answer": "1",
+    "generated_answer": "Il lotto che riguarda l'acquisto di siringhe per iniezioni sottocutanee è il lotto 1, descritto come \"Siringa sterile monouso tubercolina per iniezioni sottocute con ago sterile con sistema di sicurezza, da ml 1,0 e con intervallo della scala graduata di 0,01 ml. Cono luer-lock, senza spazio morto.\"",
+    "sources": [
+      "Capitolato-8aee0a58.pdf"
+    ],
+    "status": "CORRECT"
+  },
+  {
+    "id": 7,
+    "query": "Riguardo la gara 7855306, quale lotto riguarda l'acquisto di siringhe per emogasanalisi?",
+    "expected_answer": "2",
+    "generated_answer": "Il lotto 2 riguarda l'acquisto di siringhe per emogasanalisi.",
+    "sources": [
+      "Capitolato-8aee0a58.pdf"
+    ],
+    "status": "CORRECT"
+  },
+  {
+    "id": 8,
+    "query": "Riguardo la gara 7855306, qual è il C.N.D. del lotto 1?",
+    "expected_answer": "A020102010101",
+    "generated_answer": "Il C.N.D. del lotto 1 della gara 7855306 è A020102010101.",
+    "sources": [
+      "Capitolato-8aee0a58.pdf"
+    ],
+    "status": "CORRECT"
+  },
+  {
+    "id": 9,
+    "query": "Riguardo la gara 7855306, qual è il C.N.D. del lotto 2?",
+    "expected_answer": "A020105",
+    "generated_answer": "Il C.N.D. del lotto 2 della gara 7855306 è A020105.",
+    "sources": [
+      "Capitolato-8aee0a58.pdf"
+    ],
+    "status": "CORRECT"
+  },
+  {
+    "id": 10,
+    "query": "Riguardo la gara 7855306, qual è l'unità di misura di lotto 1 e 2?",
+    "expected_answer": "pezzo",
+    "generated_answer": "Per la gara 7855306, la misura di lotto 1 è G25X0,5X16mm, G30X0,5X13mm, mentre per lotto 2 non ci sono dettagli tecnici disponibili.",
+    "sources": [
+      "Capitolato-8aee0a58.pdf"
+    ],
+    "status": "PARTIALLY_CORRECT"
+  },
+  {
+    "id": 11,
+    "query": "Riguardo la gara 7855306, qual è il fabbisogno annuo del lotto 1?",
+    "expected_answer": "40.000 pezzi",
+    "generated_answer": "Il fabbisogno annuo del lotto 1 per la gara 7855306 è di 40.000,0.",
+    "sources": [
+      "Capitolato-8aee0a58.pdf"
+    ],
+    "status": "CORRECT"
+  },
+  {
+    "id": 12,
+    "query": "Riguardo la gara 7855306, qual è il fabbisogno annuo del lotto 2?",
+    "expected_answer": "25.000 pezzi",
+    "generated_answer": "Il fabbisogno annuo del lotto 2 per la gara 7855306 è di 25.000,0.",
+    "sources": [
+      "Capitolato-8aee0a58.pdf"
+    ],
+    "status": "CORRECT"
+  },
+  {
+    "id": 13,
+    "query": "Riguardo la gara 7855306, quale lotto richiede la preseza di cono Luer Lock?",
+    "expected_answer": "2",
+    "generated_answer": "Il lotto che richiede la presenza di cono Luer Lock nella gara 7855306 è il lotto 2.",
+    "sources": [
+      "Capitolato-8aee0a58.pdf"
+    ],
+    "status": "CORRECT"
+  },
+  {
+    "id": 14,
+    "query": "In riferimento alla gara 23PRE002, quali sono i parametri di valutazione per garze sterili?",
+    "expected_answer": "Bordi, consistenza e tramatura, piegatura e taglio, confezionamento",
+    "generated_answer": "I parametri di valutazione per garze sterili nella gara 23PRE002 sono: Bordi, Piegatura / taglio, Consistenza e tramatura, e Confezionamento.",
+    "sources": [
+      "FVG_capitolato_da_pag_77.pdf"
+    ],
+    "status": "CORRECT"
+  },
+  {
+    "id": 15,
+    "query": "In riferimento alla gara 23PRE002, qual è il punteggio massimo assegnabile all'aderenza delle bende medicate?",
+    "expected_answer": "20",
+    "generated_answer": "Il punteggio massimo assegnabile all'aderenza delle bende medicate nella gara 23PRE002 è 20.0",
+    "sources": [
+      "FVG_capitolato_da_pag_77.pdf"
+    ],
+    "status": "CORRECT"
+  },
+  {
+    "id": 16,
+    "query": "In riferimento alla gara 23PRE002, qual è il punteggio massimo assegnabile al confezionamento del lotto 47?",
+    "expected_answer": "10",
+    "generated_answer": "Il punteggio massimo assegnabile al confezionamento del lotto 47 nella gara 23PRE002 è 10.0",
+    "sources": [
+      "FVG_capitolato_da_pag_77.pdf"
+    ],
+    "status": "CORRECT"
+  },
+  {
+    "id": 17,
+    "query": "In riferimento alla gara 23PRE002, qual è il criterio motivazionale per la valutazione del confezionamento dell'ovatta?",
+    "expected_answer": "Modalità di estrazione dell’ovatta che favorisca l’estrazione garantendo il contenuto da eventuali inquinamenti, presenza di sistema richiudibile.",
+    "generated_answer": "Non so la risposta.",
+    "sources": [
+      "FVG_capitolato_da_pag_77.pdf"
+    ],
+    "status": "NOT CORRECT"
+  },
+  {
+    "id": 18,
+    "query": "In riferimento alla gara 23PRE002, qual è il prezzo unitario del lotto 2C?",
+    "expected_answer": "0,48 euro",
+    "generated_answer": "Non so la risposta.",
+    "sources": [
+      "FVG_capitolato_da_pag_77.pdf"
+    ],
+    "status": "NOT CORRECT"
+  },
+  {
+    "id": 19,
+    "query": "In riferimento alla gara 23PRE002, qual è il prezzo unitario delle garze idrofile non sterili?",
+    "expected_answer": "Lotto 29: sublotto a 3,40 euro; sublotto b 3,70 euro; sublotto c 5,30 euro. Lotto 30: sublotto a 0,92 euro; sublotto b 1,38 euro, sublotto c 2,07 euro.",
+    "generated_answer": "Non so la risposta.",
+    "sources": [
+      "FVG_capitolato_da_pag_77.pdf"
+    ],
+    "status": "NOT CORRECT"
+  },
+  {
+    "id": 20,
+    "query": "In riferimento al capitolato 'capitolato speciale.pdf', quali solo le caratteristiche dell'ago valutate per l'assegnazione dei punteggi?",
+    "expected_answer": "Atraumaticità e agevole penetrazione e scorrevolezza dell’ago nel passaggio attraverso i tessuti; Buona presa, fine maneggevolezza per percezione piani di penetrazione; Grado di Ecogenicità: visibilità dell’ago in tutta la lunghezza durante la procedura di blocco nervoso. ",
+    "generated_answer": "Le caratteristiche dell'ago valutate per l'assegnazione dei punteggi sono:\n\n- Praticità del sistema di apertura del confezionamento primario a garanzia del mantenimento della sterilità del contenuto e della permanenza dell’assemblaggio tra i diversi componenti, con un punteggio massimo di 5.0.\n- Trasparenza idonea a visualizzare il riempimento, con un punteggio massimo di 15.0.\n- Buona presa, fine maneggevolezza per percezione piani di penetrazione, con un punteggio massimo di 20.0.\n- Completezza e chiarezza delle informazioni presenti in etichetta per facile e immediata identificazione del prodotto, con un punteggio massimo di 5.0.\n- Praticità e sicurezza di incastro del mandrino con l’ago, con un punteggio massimo di 15.0.",
+    "sources": [
+      "capitolato speciale.pdf"
+    ],
+    "status": "PARTIALLY_CORRECT"
+  },
+  {
+    "id": 21,
+    "query": "In riferimento alla gara con CIG 9597835001, quali sono i CND dei prodotti richiesti?",
+    "expected_answer": "A020102020101, A030401",
+    "generated_answer": "I CND dei prodotti richiesti nella gara con CIG 9597835001 sono A020102020101 e A030401.",
+    "sources": [
+      "capitolato tecnico.pdf"
+    ],
+    "status": "CORRECT"
+  },
+  {
+    "id": 22,
+    "query": "In riferimento alla gara con CIG 9597835001, quanti pezzi di set da infusione a 1 via sono richiesti?",
+    "expected_answer": "1740",
+    "generated_answer": "Il numero di pezzi richiesti per il set da infusione a 1 via nella gara con CIG 9597835001 è 1740.",
+    "sources": [
+      "capitolato tecnico.pdf"
+    ],
+    "status": "CORRECT"
+  },
+  {
+    "id": 23,
+    "query": "In riferimento alla gara 9289221BA9, qual è l'importo a base d'asta e la quantità dei dispositivi per neurostimolazione?",
+    "expected_answer": "Lotto 6: 600.000,00 euro/400 pz; Lotto 7: 375.000,00 euro/250 pz; Lotto 8: 75.000,00 euro/50 pz",
+    "generated_answer": "I lotti 6, 7 e 8 della gara 9289221BA9 sono i dispositivi per neurostimolazione. Hanno rispettivamente un importo a base d'asta di 600.000,0 euro e 375.000,0 ", 
+    "sources": [
+      "capitolato_9289221BA9.pdf"
+    ],
+    "status": "PARTIALLY_CORRECT"
+  },
+  {
+    "id": 24,
+    "query": "Quali sono i criteri di valutazione per i set di anestesia loco-regionale periferica continua?",
+    "expected_answer": "capitolato speciale.pdf (lotto 5): caratteristiche dell'ago, caratteristiche della siringa, caratteristiche del catetere, caratteristiche del confezionamento, caratteristiche etichettatura",
+    "generated_answer": "I criteri di valutazione per i set di anestesia loco-regionale periferica continua includono: aspetti positivi evidenti ma inferiori a soluzioni aspettative (Giudizio: Buono), presenza di sistema di fissaggio del filtro alla cute (Si 10 No 0), completezza e chiarezza delle informazioni presenti in etichetta per facile e immediata identificazione del prodotto, grado di ecogenicità e radiopacità, resistenza all’inginocchiamento, aspetti positivi elevati o ottima rispondenza alle aspettative (Giudizio: Ottimo), aspetti positivi apprezzabilmente di qualche pregio ottimali (Giudizio: Discreto), agevole penetrazione e scorrevolezza dell’ago nel passaggio attraverso i tessuti, grado di isolamento dell’ago, ergonomicità dell’impugnatura, buona presa e fine maneggevolezza per percezione piani di penetrazione, si esclude la possibilità di soluzioni migliori (Giudizio: Eccellente), e nessuna proposta o miglioramento irrilevante (Giudizio: Assente/irrilevante).",
+    "sources": [
+      "capitolato speciale.pdf"
+    ],
+    "status": "PARTIALLY_CORRECT"
+  },
+  {
+    "id": 25,
+    "query": "Qual è l'importo a base d'asta annuale per aghi per anestesia spinale? Riportare i rispettivi CIG per ogni lotto",
+    "expected_answer": "Lotto 8: 700,00 euro, CIG 9417925D8F; Lotto 9: 200,00 euro, CIG 9417945E10; Lotto 10: 400,00 euro, CIG 94179534AD",
+    "generated_answer": "Il CIG 9417945E10 ha un importo a base d'asta annuale di 200,0 euro, il CIG 94179534AD ha un importo di 16.67, e il CIG 941795999F ha un importo di 6.25 per aghi per anestesia spinale.",
+    "sources": [
+      "capitolato speciale.pdf"
+    ],
+    "status": "PARTIALLY_CORRECT"
+  },
+  {
+    "id": 26,
+    "query": "Quali sono i prodotti per effettuare anestesia? Se disponibili, la denominazione del prodotto",
+    "expected_answer": "capitolato_9289221BA9.pdf: lotti 1 (Sistema per blocco del ganglio sfenopalatino), 2 (Gel anti aderenziale epidurale a base di acido ialuronico);\nFVG: lotto 13, cnd non indicato (Protezione per occhi ad uso in anestesia/rianimazione con adesivo atraumatico e linguetta di rimozione, trasparente, monouso, non sterile, sagomato, latex free.)\ncapitolato speciale.pdf: lotti 1-2 (set per anestesia peridurale continua), 3-4 (SET PER ANESTESIA COMBINATA SPINALE E PERIDURALE CONTINUA), 5 (SET PER ANESTESIA LOCO REGIONALE PERIFERICA CONTINUA), 8 (AGO PER ANESTESIA SPINALE PUNTA MATITA), 9-10 (Lotto 9 e 10. AGO PER ANESTESIA SPINALE PUNTA QUINCKE), 11 (AGO PER ANESTESIA CAUDALE)",
+    "generated_answer": "SET PER ANESTESIA PERIDURALE CONTINUA, SET PER ANESTESIA PERIDURALE CONTINUA per pazienti obesi, SET PER ANESTESIA COMBINATA SPINALE E PERIDURALE CONTINUA, SET PER ANESTESIA COMBINATA PERIDURALE E SPINALE, SET PER ANESTESIA LOCO-REGIONALE PERIFERICA CONTINUA, AGO PER ANESTESIA SPINALE PUNTA QUINCKE, AGHI CON PUNTA DI QUINCKE per anestesia spinale pediatrica, AGHI CON PUNTA DI QUINCKE per anestesia spinale, AGO PER ANESTESIA CAUDALE.",
+    "sources": [
+      "capitolato speciale.pdf",
+      "capitolato_9289221BA9.pdf",
+      "FVG_capitolato_da_pag_77.pdf"
+    ],
+    "status": "PARTIALLY_CORRECT"
+  },
+  {
+    "id": 27,
+    "query": "Quali sono i parametri di valutazione per garze sterili?",
+    "expected_answer": "FVG_capitolato_da_pag_77.pdf (lotti dal 15 al 26) bordi, consistenza e tramatura, piegatura/taglio, confezionamento",
+    "generated_answer": "I parametri di valutazione per garze sterili includono: Bordi, Confezionamento, Piegatura / taglio, Consistenza e Tramatura.",
+    "sources": [
+      "FVG_capitolato_da_pag_77.pdf"
+    ],
+    "status": "CORRECT"
+  },
+  {
+    "id": 28,
+    "query": "Quali sono i lotti riguardanti le siringhe con cono luer lock? Riportare anche l'importo annuale e il CND se disponibili",
+    "expected_answer": "capitolato tecnico.pdf: lotto 1 - importo annuale 82.102,00 euro, CND A020102020101; Capitolato-8aee0a58.pdf: lotto 1 - importo annuale 3,200.00 euro, CND A020102010101, lotto 2 - importo annuiale 19.000,00 euro, CND A020105",
+    "generated_answer": "Il lotto riguardante le siringhe con cono luer lock è il lotto 1. L'importo annuale disponibile per questo lotto è 133.33333333333334, e i codici CND associati sono A020102020101, A030401, e A020102010101.",
+    "sources": [
+      "capitolato tecnico.pdf",
+      "Capitolato-8aee0a58.pdf"
+    ],
+    "status": "PARTIALLY_CORRECT"
+  },
+  {
+    "id": 29,
+    "query": "Qual è il criterio motivazionale per la valutazione del confezionamento dell'ovatta?",
+    "expected_answer": "Lotto 47: Modalità di estrazione dell’ovatta che favorisca l’estrazione garantendo il contenuto da eventuali inquinamenti, presenza di sistema richiudibile.",
+    "generated_answer": "Il confezionamento viene valutato in base alle modalità con cui l'ovatta viene estratta, garantendo che il contenuto sia protetto da eventuali inquinamenti e che sia presente un sistema richiudibile.",
+    "sources": [
+      "fvg_capitolato_da_pag_77.pdf"
+    ],
+    "status": "CORRECT"
+  },
+  {
+    "id": 30,
+    "query": "Qual è il prezzo unitario delle garze idrofile non sterili?",
+    "expected_answer": "Lotto 29: sublotto a 3,40 euro; sublotto b 3,70 euro; sublotto c 5,30 euro. Lotto 30: sublotto a 0,92 euro; sublotto b 1,38 euro, sublotto c 2,07 euro.",
+    "generated_answer": "Non so rispondere alla domanda.",
+    "sources": [
+      "FVG_capitolato_da_pag_77.pdf"
+    ],
+    "status": "NOT CORRECT"
+  }
+]
