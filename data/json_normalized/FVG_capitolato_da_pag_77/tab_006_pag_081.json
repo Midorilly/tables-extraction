@@ -1,0 +1,50 @@
+{
+  "elementi": [
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "27",
+        "28"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "GARZE LAPAROTOMICHE",
+      "altri_dettagli": "Tabella criteri di valutazione relativa a 'GARZE LAPAROTOMICHE' per i lotti dal n. 27 al n. 28. Intestazione: 'PARAMETRI DI VALUTAZIONE; PT max; CRITERIO MOTIVAZIONALE'. Punteggio totale indicato: 70. Testi integrali dei criteri presenti (vedi criteri_associati).",
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Bordi",
+          "punteggio_massimo": 18.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Bordi rivolti internamente e cuciti lungo il perimetro."
+        },
+        {
+          "parametro": "Consistenza e tramatura",
+          "punteggio_massimo": 20.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Regolarità della tessitura esente da sfilacciature e difetti, regolarità del titolo, dei bordi e tenuta delle cuciture, presenza di filo di bario saldamente incorporato, uniformità, spessore, morbidezza e prelavaggio, mantenimento della consistenza dopo l'uso."
+        },
+        {
+          "parametro": "Piegatura / taglio",
+          "punteggio_massimo": 20.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Qualità del taglio ortogonale, facilità e regolarità del taglio e della piegatura per la componente garza, capacità assorbente per la componente cotone."
+        },
+        {
+          "parametro": "Confezionamento",
+          "punteggio_massimo": 12.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Funzionalità di utilizzo del confezionamento: ingombro, robustezza e resistenza alla rottura tale da garantire il contenuto da eventuali inquinamenti, maneggevolezza, facilità di apertura, etichetta in lingua italiana rimovibile ed adesiva per la tracciabilità, completezza e chiarezza di informazioni in essa contenute, presenza e facilità di individuazione dell'invito all'apertura, facilità di apertura in modo asettico della confezione, consistenza della confezione, n° pezzi per confezione (ove pertinente)."
+        }
+      ]
+    }
+  ],
+  "documento_sorgente": "FVG_capitolato_da_pag_77"
+}

@@ -1,0 +1,275 @@
+{
+  "elementi": [
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "3",
+        "4"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "SET PER ANESTESIA COMBINATA SPINALE E PERIDURALE CONTINUA",
+      "altri_dettagli": null,
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Trasparenza del cono dell’ago spinale idonea a visualizzare il riempimento e antiriflesso",
+          "punteggio_massimo": 5.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Max 5 Min 0"
+        }
+      ]
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "3",
+        "4"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "SET PER ANESTESIA COMBINATA SPINALE E PERIDURALE CONTINUA",
+      "altri_dettagli": null,
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Agevole penetrazione e scorrevolezza dell’ago nel passaggio attraverso i tessuti.",
+          "punteggio_massimo": 10.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Max 10 Min 0"
+        }
+      ]
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "3",
+        "4"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "SET PER ANESTESIA COMBINATA SPINALE E PERIDURALE CONTINUA",
+      "altri_dettagli": null,
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Ergonomicità dell’impugnatura, buona presa e fine maneggevolezza per percezione piani di penetrazione",
+          "punteggio_massimo": 10.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Max 10 Min 0"
+        }
+      ]
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "3",
+        "4"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "SET PER ANESTESIA COMBINATA SPINALE E PERIDURALE CONTINUA",
+      "altri_dettagli": null,
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Semplicità ed efficenza del sistema di bloccaggio.",
+          "punteggio_massimo": 10.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Max 10 Min 0"
+        }
+      ]
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "3",
+        "4"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "SET PER ANESTESIA COMBINATA SPINALE E PERIDURALE CONTINUA",
+      "altri_dettagli": null,
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Buona scorrevolezza dei 2 aghi",
+          "punteggio_massimo": 10.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Max 10 Min 0"
+        }
+      ]
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "3",
+        "4"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "SET PER ANESTESIA COMBINATA SPINALE E PERIDURALE CONTINUA",
+      "altri_dettagli": null,
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Scorrevolezza e tenuta dello stantuffo LOR",
+          "punteggio_massimo": 10.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Max 10 Min 0"
+        }
+      ]
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "3",
+        "4"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "SET PER ANESTESIA COMBINATA SPINALE E PERIDURALE CONTINUA",
+      "altri_dettagli": "Riga successiva nel CSV senza punteggio: \"all’inginocchiamento.\"",
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Trasparenza, atraumaticità della punta, numero di fori laterali per buona infusione, identificazione per imaging, resistenza",
+          "punteggio_massimo": 10.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Max 10 Min 0"
+        }
+      ]
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "3",
+        "4"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "SET PER ANESTESIA COMBINATA SPINALE E PERIDURALE CONTINUA",
+      "altri_dettagli": null,
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Facilità di connessione catetere-filtro e tenuta della connessione",
+          "punteggio_massimo": 5.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Max 5 Min 0"
+        }
+      ]
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "3",
+        "4"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": "Praticità del sistema di apertura del confezionamento primario a garanzia del mantenimento della sterilità del contenuto e della permanenza dell’assemblaggio tra copri ago/ago e mandrino/ago.",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "SET PER ANESTESIA COMBINATA SPINALE E PERIDURALE CONTINUA",
+      "altri_dettagli": null,
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Praticità del sistema di apertura del confezionamento primario a garanzia del mantenimento della sterilità del contenuto e della permanenza dell’assemblaggio tra copri ago/ago e mandrino/ago.",
+          "punteggio_massimo": 5.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Max 5 Min 0"
+        }
+      ]
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "3",
+        "4"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "SET PER ANESTESIA COMBINATA SPINALE E PERIDURALE CONTINUA",
+      "altri_dettagli": null,
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Completezza e chiarezza delle informazioni presenti in etichetta per facile e immediata identificazione del prodotto.",
+          "punteggio_massimo": 5.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Max 5 Min 0"
+        }
+      ]
+    }
+  ],
+  "documento_sorgente": "capitolato speciale"
+}

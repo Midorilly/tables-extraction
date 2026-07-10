@@ -1,0 +1,55 @@
+{
+  "elementi": [
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "47"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": "Modalità di estrazione dell’ovatta che favorisca l’estrazione garantendo il contenuto da eventuali inquinamenti, presenza di sistema richiudibile.",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "OVATTA",
+      "altri_dettagli": "Tabella parametri di valutazione per Lotto 47. Intestazione: 'PARAMETRI DI VALUTAZIONE; PT max; CRITERIO MOTIVAZIONALE'. Punteggio totale indicato nella tabella: 70.",
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Impurità / aspetto",
+          "punteggio_massimo": 15.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Morbidezza, inodore, bianco, facilità di prelevamento per l'utilizzo."
+        },
+        {
+          "parametro": "Polverosità",
+          "punteggio_massimo": 15.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Non rilascio di polvere e frammenti di fibra o altre impurità, non contenente fiocco o cascame di fiocco."
+        },
+        {
+          "parametro": "Assorbenza",
+          "punteggio_massimo": 15.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Alto potere assorbente."
+        },
+        {
+          "parametro": "Compattezza",
+          "punteggio_massimo": 15.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Spessore e resistenza falda/assenza di sfaldatura e nodi, uniformità, privo di imperfezioni, resistenza allo stiramento."
+        },
+        {
+          "parametro": "Confezionamento",
+          "punteggio_massimo": 10.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Modalità di estrazione dell’ovatta che favorisca l’estrazione garantendo il contenuto da eventuali inquinamenti, presenza di sistema richiudibile."
+        }
+      ]
+    }
+  ],
+  "documento_sorgente": "FVG_capitolato_da_pag_77"
+}

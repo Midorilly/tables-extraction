@@ -1,0 +1,31 @@
+{
+  "elementi": [
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [],
+      "sub_lotto": null,
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Fornitura di MEDICAZIONI GENERALI per un periodo di 48 mesi per gli Enti del SSR della Regione Friuli Venezia Giulia (procedura aperta ai sensi art. 71 D.lgs. n. 36/2023).",
+      "altri_dettagli": "Quadro economico di spesa: A.1.1 Importo delle forniture: € 15.409.032,61; A.1.2 Importo dei servizi: € 0,00; A.2.1 Oneri per la sicurezza non soggetti a ribasso: € 0,00; Totale importo A (base d'asta delle forniture e dei servizi): € 15.409.032,61. Opzioni: A.3.1 Opzione quinto d'obbligo: € 3.081.806,52; A.3.2 Opzione estensione contrattuale (quantitativa) 100%: € 15.409.032,61; A.3.3 Opzione di proroga contrattuale (comprenso estensione) 12 mesi: € 8.474.967,94; A.3.4 Opzione di proroga contrattuale (compreso estensione) 6 mesi: € 4.237.483,97; Totale importo OPZIONI delle forniture e dei servizi: € 31.203.291,04. B. Somme a disposizione: B.1 Incentivi per ARCS, ASFO, CRO, BURLO, ASUFC, ASUGI (calcolo ex art.45): € 77.045,16; B.2 Incentivi opzioni contrattuali (ex art.45): € 156.016,46; B.3 Contributi ANAC: € 880,00; B.4 Imprevisti (stimati 8%): € 1.232.722,61; Totale somme a disposizione dell'Amministrazione: € 1.466.664,23. Totale costo intervento (A+B): € 48.078.987,87. Stazione appaltante indicata: CUCSA FVG.",
+      "fabbisogno_totale": null,
+      "importo_base_asta": 15409032.61,
+      "importo_totale": 48078987.87,
+      "strutture_destinatarie": [
+        "Enti del SSR della Regione Friuli Venezia Giulia",
+        "ARCS",
+        "ASFO",
+        "CRO",
+        "BURLO",
+        "ASUFC",
+        "ASUGI",
+        "CUCSA FVG"
+      ],
+      "criteri_associati": []
+    }
+  ],
+  "documento_sorgente": "FVG_capitolato_da_pag_77"
+}

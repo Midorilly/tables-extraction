@@ -1,0 +1,651 @@
+{
+  "elementi": [
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "1"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Cerotto in tessuto di cotone, ad elevata resistenza tensile, permeabile al vapore d’acqua, idrorepellente con massa adesiva e ossido di zinco (con contenuto non inferiore al 10% della massa adesiva), lunghezza non inferiore 5m.",
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Cerotto in tessuto di cotone, ad elevata resistenza tensile, permeabile al vapore d’acqua, idrorepellente con massa adesiva e ossido di zinco (con contenuto non inferiore al 10% della massa adesiva), lunghezza non inferiore 5m.",
+      "altri_dettagli": "Righe sottostanti con voci a/b/c descrivono dimensioni e fabbisogni. Garanzia provvisoria indicata: 1.529,95 €. Colonne strutture: CF.USA; IG.USA; OF.SA; ETSEIRT OLRUB; ONAIVA ORC.",
+      "fabbisogno_totale": null,
+      "importo_base_asta": 25288.5,
+      "importo_totale": 76497.71,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "1"
+      ],
+      "sub_lotto": "A",
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Altezza 1,25cm, aerato.",
+      "confezionamento": "Pezzo",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Cerotto in tessuto di cotone (voce A: Altezza 1,25cm, aerato.)",
+      "altri_dettagli": "Campionatura: Non richiesta. Quantità per strutture (intestazioni originali): CF.USA: 530; IG.USA: 100; OF.SA: 120; ETSEIRT OLRUB: 1600; ONAIVA ORC: 500. Prezzo unitario indicato: 0,14 €.",
+      "fabbisogno_totale": 2850.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "1"
+      ],
+      "sub_lotto": "B",
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Altezza 2,5cm, aerato.",
+      "confezionamento": "Pezzo",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Cerotto in tessuto di cotone (voce B: Altezza 2,5cm, aerato.)",
+      "altri_dettagli": "Campionatura: 5 pezzi. Quantità per strutture: CF.USA: 5800; IG.USA: 25000; OF.SA: 4000; ETSEIRT OLRUB: 4930; ONAIVA ORC: 500. Prezzo unitario indicato: 0,25 €.",
+      "fabbisogno_totale": 40230.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "1"
+      ],
+      "sub_lotto": "C",
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Altezza 5cm, aerato.",
+      "confezionamento": "Pezzo",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Cerotto in tessuto di cotone (voce C: Altezza 5cm, aerato.)",
+      "altri_dettagli": "Campionatura: 5 pezzi. Quantità per strutture: CF.USA: 2140; IG.USA: 23000; OF.SA: 3200; ETSEIRT OLRUB: 2060; ONAIVA ORC: 500. Prezzo unitario indicato: 0,48 €.",
+      "fabbisogno_totale": 30900.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "2"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Cerotto indicato per la cute sensibile dei neonati, adesivo anallergico, traspirante, strappabile a mano, lunghezza rotolo non inferiore a 9m, preferibilmente rocchetto trattato con materiale antimicrobico.",
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Cerotto indicato per la cute sensibile dei neonati, adesivo anallergico, traspirante, di lunga durata, strappabile a mano, elevato potere adesivo, rotolo lunghezza >=9m",
+      "altri_dettagli": "Righe sottostanti con voci a/b/c descrivono dimensioni, confezioni e fabbisogni. Garanzia provvisoria indicata: 207,25 €.",
+      "fabbisogno_totale": null,
+      "importo_base_asta": 3425.66,
+      "importo_totale": 10362.62,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "2"
+      ],
+      "sub_lotto": "A",
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Altezza 1,25cm, preferibilmente in confezione da 24 rocchetti.",
+      "confezionamento": "Pezzo",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Cerotto neonati (voce A: Altezza 1,25cm, confezione 24 rocchetti)",
+      "altri_dettagli": "Campionatura: Non richiesta. Quantità per strutture: CF.USA: 830; IG.USA: 100; OF.SA: 576; ETSEIRT OLRUB: 1.360; ONAIVA ORC: (vuoto). Prezzo unitario indicato: 0,14 €.",
+      "fabbisogno_totale": 2866.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "2"
+      ],
+      "sub_lotto": "B",
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Altezza 2,5cm, preferibilmente in confezione da 12 rocchetti.",
+      "confezionamento": "Pezzo",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Cerotto neonati (voce B: Altezza 2,5cm, confezione 12 rocchetti)",
+      "altri_dettagli": "Campionatura: 5 pezzi. Quantità per strutture: CF.USA: 1.380; IG.USA: 1.000; OF.SA: 384; ETSEIRT OLRUB: 2.030. Prezzo unitario indicato: 0,25 €.",
+      "fabbisogno_totale": 4794.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "2"
+      ],
+      "sub_lotto": "C",
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Altezza 5cm, preferibilmente in confezione da 6 rocchetti.",
+      "confezionamento": "Pezzo",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Cerotto neonati (voce C: Altezza 5cm, confezione 6 rocchetti)",
+      "altri_dettagli": "Campionatura: 5 pezzi. Quantità per strutture: CF.USA: 630; IG.USA: 1.000; OF.SA: 24; ETSEIRT OLRUB: 2.130; ONAIVA ORC: 20. Prezzo unitario indicato: 0,48 €.",
+      "fabbisogno_totale": 3804.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "3"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Cerotto in TNT ipoallergico, microporoso, traspirante, massa adesiva acrilica inerte, lunghezza rotolo non inferiore a 9m.",
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Cerotto in TNT ipoallergico, microporoso, traspirante, massa adesiva acrilica inerte, ad elevata tollerabilità cutanea, in rotoli di lunghezza >=9m",
+      "altri_dettagli": "Righe sottostanti con voci a/b/c. Garanzia provvisoria: 6.599,35 €.",
+      "fabbisogno_totale": null,
+      "importo_base_asta": 109080.2,
+      "importo_totale": 329967.61,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "3"
+      ],
+      "sub_lotto": "A",
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Altezza 1,25cm.",
+      "confezionamento": "Pezzo",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Cerotto TNT (voce A: Altezza 1,25cm)",
+      "altri_dettagli": "Campionatura: Non richiesta. Quantità per strutture: CF.USA: 3430; IG.USA: 50; OF.SA: 2000; ETSEIRT OLRUB: 3980; ONAIVA ORC: 500. Prezzo unitario indicato: 0,09 €.",
+      "fabbisogno_totale": 9960.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "3"
+      ],
+      "sub_lotto": "B",
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Altezza 2,5cm.",
+      "confezionamento": "Pezzo",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Cerotto TNT (voce B: Altezza 2,5cm)",
+      "altri_dettagli": "Campionatura: 5 pezzi. Quantità per strutture: CF.USA: 181000; IG.USA: 95000; OF.SA: 84000; ETSEIRT OLRUB: 9150; ONAIVA ORC: 6700. Prezzo unitario indicato: 0,17 €.",
+      "fabbisogno_totale": 375850.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "3"
+      ],
+      "sub_lotto": "C",
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Altezza 5cm.",
+      "confezionamento": "Pezzo",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Cerotto TNT (voce C: Altezza 5cm)",
+      "altri_dettagli": "Campionatura: 5 pezzi. Quantità per strutture: CF.USA: 79800; IG.USA: 32000; OF.SA: 16000; ETSEIRT OLRUB: 4220; ONAIVA ORC: 2190. Prezzo unitario indicato: 0,33 €.",
+      "fabbisogno_totale": 134210.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "4"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Cerotto poroso in TNT elastico adesivo, supporto di fibre di poliestere non tessute, poroso, permeabile all’aria e al vapore, traspirante, adesivo ipoallergenico, rotoli lunghezza >=9m, carta pretagliata.",
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Cerotto poroso (supporto per fissaggio medicazioni) in TNT elastico adesivo, rotolo >=9m",
+      "altri_dettagli": "Righe sottostanti con voci a-e. Garanzia provvisoria: 4.678,55 €.",
+      "fabbisogno_totale": null,
+      "importo_base_asta": 77331.45,
+      "importo_totale": 233927.64,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "4"
+      ],
+      "sub_lotto": "A",
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Altezza 2,5cm.",
+      "confezionamento": "Pezzo",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Cerotto poroso (voce A: Altezza 2,5cm)",
+      "altri_dettagli": "Campionatura: Non richiesta. Quantità per strutture: CF.USA: 3800; IG.USA: 200; OF.SA: 2800; ETSEIRT OLRUB: 1000; ONAIVA ORC: 1720. Prezzo unitario indicato: 0,30 €.",
+      "fabbisogno_totale": 9520.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "4"
+      ],
+      "sub_lotto": "B",
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Altezza 5cm.",
+      "confezionamento": "Pezzo",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Cerotto poroso (voce B: Altezza 5cm)",
+      "altri_dettagli": "Campionatura: 5 pezzi. Quantità per strutture: CF.USA: 11400; IG.USA: 14500; OF.SA: 1600; ETSEIRT OLRUB: 1440; ONAIVA ORC: 2332. Prezzo unitario indicato: 0,55 €.",
+      "fabbisogno_totale": 31272.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "4"
+      ],
+      "sub_lotto": "C",
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Altezza 10cm.",
+      "confezionamento": "Pezzo",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Cerotto poroso (voce C: Altezza 10cm)",
+      "altri_dettagli": "Campionatura: 5 pezzi. Quantità per strutture: CF.USA: 11980; IG.USA: 8600; OF.SA: 3000; ETSEIRT OLRUB: 100; ONAIVA ORC: 937. Prezzo unitario indicato: 1,05 €.",
+      "fabbisogno_totale": 24617.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "4"
+      ],
+      "sub_lotto": "D",
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Altezza 15cm.",
+      "confezionamento": "Pezzo",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Cerotto poroso (voce D: Altezza 15cm)",
+      "altri_dettagli": "Campionatura: 5 pezzi. Quantità per strutture: CF.USA: 7600; IG.USA: 2100; OF.SA: 3200; ETSEIRT OLRUB: 440; ONAIVA ORC: 992. Prezzo unitario indicato: 1,50 €.",
+      "fabbisogno_totale": 14332.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "4"
+      ],
+      "sub_lotto": "E",
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Altezza 20cm.",
+      "confezionamento": "Pezzo",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Cerotto poroso (voce E: Altezza 20cm)",
+      "altri_dettagli": "Campionatura: Non richiesta. Quantità per strutture: CF.USA: 1780; IG.USA: 1550; OF.SA: 1005; ETSEIRT OLRUB: (vuoto); ONAIVA ORC: 630. Prezzo unitario indicato: 2,00 €.",
+      "fabbisogno_totale": 4965.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "5"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Cerotto in seta artificiale, aerato, ad elevata resistenza, lacerabilità longitudinale e trasversale, adesivo ipoallergenico a base di acrilati, rotolo lunghezza >=5m.",
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Cerotto in seta artificiale, aerato, ad elevata resistenza tensile, lacerabilità longitudinale e trasversale, adesivo ipoallergenico a base di acrilati, rotolo >=5m",
+      "altri_dettagli": "Righe sottostanti con voci a-c. Garanzia provvisoria: 2.375,40 €.",
+      "fabbisogno_totale": null,
+      "importo_base_asta": 39262.8,
+      "importo_totale": 118769.97,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "5"
+      ],
+      "sub_lotto": "A",
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Altezza 1,25cm.",
+      "confezionamento": "Pezzo",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Cerotto seta (voce A: Altezza 1,25cm)",
+      "altri_dettagli": "Campionatura: Non richiesta. Quantità per strutture: CF.USA: 1070; IG.USA: 4700; OF.SA: 5; ETSEIRT OLRUB: 50; ONAIVA ORC: 600. Prezzo unitario indicato: 0,14 €.",
+      "fabbisogno_totale": 6425.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "5"
+      ],
+      "sub_lotto": "B",
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Altezza 2,5cm.",
+      "confezionamento": "Pezzo",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Cerotto seta (voce B: Altezza 2,5cm)",
+      "altri_dettagli": "Campionatura: 5 pezzi. Quantità per strutture: CF.USA: 32300; IG.USA: 9300; OF.SA: 44000; ETSEIRT OLRUB: 2720; ONAIVA ORC: 5260. Prezzo unitario indicato: 0,26 €.",
+      "fabbisogno_totale": 93580.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "5"
+      ],
+      "sub_lotto": "C",
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Altezza 5cm.",
+      "confezionamento": "Pezzo",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Cerotto seta (voce C: Altezza 5cm)",
+      "altri_dettagli": "Campionatura: 5 pezzi. Quantità per strutture: CF.USA: 17000; IG.USA: 2400; OF.SA: 4800; ETSEIRT OLRUB: 100; ONAIVA ORC: 3765. Prezzo unitario indicato: 0,50 €.",
+      "fabbisogno_totale": 28065.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "6"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Cerotto in materiale plastico trasparente (polietilene microforato), traspirante, elastico, massa adesiva ipoallergenica, rotolo lunghezza >=9m.",
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Cerotto plastico trasparente (polietilene microforato), traspirante, elastico, rotolo >=9m",
+      "altri_dettagli": "Righe sottostanti con voci a-c. Garanzia provvisoria: 1.348,29 €.",
+      "fabbisogno_totale": null,
+      "importo_base_asta": 22285.8,
+      "importo_totale": 67414.55,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "6"
+      ],
+      "sub_lotto": "A",
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Altezza 1,25cm.",
+      "confezionamento": "Pezzo",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Cerotto plastico (voce A: Altezza 1,25cm)",
+      "altri_dettagli": "Campionatura: Non richiesta. Quantità per strutture: CF.USA: 2880; IG.USA: 300; OF.SA: 2800; ETSEIRT OLRUB: 50; ONAIVA ORC: 600. Prezzo unitario indicato: 0,14 €.",
+      "fabbisogno_totale": 6630.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "6"
+      ],
+      "sub_lotto": "B",
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Altezza 2,5cm.",
+      "confezionamento": "Pezzo",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Cerotto plastico (voce B: Altezza 2,5cm)",
+      "altri_dettagli": "Campionatura: 5 pezzi. Quantità per strutture: CF.USA: 9440; IG.USA: 21000; OF.SA: 1400; ETSEIRT OLRUB: 70; ONAIVA ORC: 1100. Prezzo unitario indicato: 0,26 €.",
+      "fabbisogno_totale": 33010.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "6"
+      ],
+      "sub_lotto": "C",
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Altezza 5cm.",
+      "confezionamento": "Pezzo",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Cerotto plastico (voce C: Altezza 5cm)",
+      "altri_dettagli": "Campionatura: 5 pezzi. Quantità per strutture: CF.USA: 13900; IG.USA: 7300; OF.SA: 3200; ETSEIRT OLRUB: 50; ONAIVA ORC: 1100. Prezzo unitario indicato: 0,50 €.",
+      "fabbisogno_totale": 25550.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "7"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Rotolo di benda di cotone elastico, larghezza 5cm e lunghezza 5m, con strato adesivo (acrilico) ipoallergenico, elasticità ~40%, resistente all’acqua, per taping kinesiologico.",
+      "confezionamento": "Rotolo; 3 rotoli (unità indicata)",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Rotolo di benda di cotone elastico, larghezza 5cm, lunghezza 5m, indicato per taping kinesiologico",
+      "altri_dettagli": "Quantità per strutture: CF.USA: 1310; IG.USA: 1600; OF.SA: 600; ETSEIRT OLRUB: (vuoto); ONAIVA ORC: 1000. Prezzo unitario indicato: 7,00 €. Importo complessivo a base d'asta: 31.570,00 €; Importo complessivo incluse opzioni contrattuali: 95.499,25 €. Garanzia provvisoria: 1.909,99 €.",
+      "fabbisogno_totale": 4510.0,
+      "importo_base_asta": 31570.0,
+      "importo_totale": 95499.25,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "8"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Medicazione monouso sterile per ferite per sito chirurgico con compressa assorbente centrale, supporto in TNT estensibile, adesivo sui 4 lati, radiotrasparente, confezionata singolarmente in busta termosaldata.",
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Medicazione monouso sterile con compressa assorbente centrale, supporto in TNT, adesivo sui 4 lati, singola busta termosaldata",
+      "altri_dettagli": "Righe sottostanti con voci a-f riportano misure e fabbisogni. Garanzia provvisoria: 14.543,61 €.",
+      "fabbisogno_totale": null,
+      "importo_base_asta": 240390.2,
+      "importo_totale": 727180.36,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "8"
+      ],
+      "sub_lotto": "A",
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Misura totale della medicazione 7x5cm.",
+      "confezionamento": "Pezzo",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Medicazione 7x5cm (voce A)",
+      "altri_dettagli": "Campionatura: 5 pezzi. Quantità per strutture: CF.USA: 1.044.000; IG.USA: 1.300.000; OF.SA: 600.000; ETSEIRT OLRUB: 54.600; ONAIVA ORC: 69.000. Prezzo unitario indicato: 0,02 €.",
+      "fabbisogno_totale": 3067600.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "8"
+      ],
+      "sub_lotto": "B",
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Misura totale della medicazione 10x8cm.",
+      "confezionamento": "Pezzo",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Medicazione 10x8cm (voce B)",
+      "altri_dettagli": "Campionatura: 5 pezzi. Quantità per strutture: CF.USA: 637.000; IG.USA: 800.000; OF.SA: 280.000; ETSEIRT OLRUB: 40.650; ONAIVA ORC: 45.000. Prezzo unitario indicato: 0,04 €.",
+      "fabbisogno_totale": 1802650.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "8"
+      ],
+      "sub_lotto": "C",
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Misura totale della medicazione 10x15cm.",
+      "confezionamento": "Pezzo",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Medicazione 10x15cm (voce C)",
+      "altri_dettagli": "Campionatura: Non richiesta. Quantità per strutture: CF.USA: 322.000; IG.USA: 250.000; OF.SA: 124.000; ETSEIRT OLRUB: 34.350; ONAIVA ORC: 31.900. Prezzo unitario indicato: 0,06 €.",
+      "fabbisogno_totale": 762250.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "8"
+      ],
+      "sub_lotto": "D",
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Misura totale della medicazione 10x20cm.",
+      "confezionamento": "Pezzo",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Medicazione 10x20cm (voce D)",
+      "altri_dettagli": "Campionatura: 5 pezzi. Quantità per strutture: CF.USA: 157.000; IG.USA: 250.000; OF.SA: 50.000; ETSEIRT OLRUB: 12.940; ONAIVA ORC: 20.000. Prezzo unitario indicato: 0,08 €.",
+      "fabbisogno_totale": 489940.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "8"
+      ],
+      "sub_lotto": "E",
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Misura totale della medicazione 10x25cm.",
+      "confezionamento": "Pezzo",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Medicazione 10x25cm (voce E)",
+      "altri_dettagli": "Campionatura: Non richiesta. Quantità per strutture: CF.USA: 68.200; IG.USA: 18.000; OF.SA: 20.000; ETSEIRT OLRUB: 10.500; ONAIVA ORC: 10.500. Prezzo unitario indicato: 0,10 €.",
+      "fabbisogno_totale": 127200.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": "23PRE002",
+      "numeri_lotto": [
+        "8"
+      ],
+      "sub_lotto": "F",
+      "durata_contratto_mesi": 48,
+      "misure_dettagli_tecnici": "Misura totale della medicazione 10x30cm.",
+      "confezionamento": "Pezzo",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Medicazione 10x30cm (voce F)",
+      "altri_dettagli": "Campionatura: Non richiesta. Quantità per strutture: CF.USA: 18.000; IG.USA: 46.000; OF.SA: 2.000; ETSEIRT OLRUB: 4.850; ONAIVA ORC: 6.500. Prezzo unitario indicato: 0,12 €.",
+      "fabbisogno_totale": 77350.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    }
+  ],
+  "documento_sorgente": "FVG_capitolato_da_pag_77"
+}

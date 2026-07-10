@@ -1,0 +1,187 @@
+{
+  "elementi": [
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "5"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "SET PER ANESTESIA LOCO-REGIONALE PERIFERICA CONTINUA",
+      "altri_dettagli": "Categoria: Caratteristiche dell’ago",
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Agevole penetrazione e scorrevolezza dell’ago nel passaggio attraverso i tessuti. Grado di isolamento dell’ago.",
+          "punteggio_massimo": 15.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Punteggio: Max 15 Min 0; Tipo punteggio: D"
+        }
+      ]
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "5"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "SET PER ANESTESIA LOCO-REGIONALE PERIFERICA CONTINUA",
+      "altri_dettagli": "Categoria: Caratteristiche dell’ago",
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Ergonomicità dell’impugnatura, buona presa e fine maneggevolezza per percezione piani di penetrazione",
+          "punteggio_massimo": 10.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Punteggio: Max 10 Min 0; Tipo punteggio: D"
+        }
+      ]
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "5"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "SET PER ANESTESIA LOCO-REGIONALE PERIFERICA CONTINUA",
+      "altri_dettagli": "Categoria: Caratteristiche del catetere",
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Grado di ecogenicità e radiopacità. Resistenza all’inginocchiamento.",
+          "punteggio_massimo": 20.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Punteggio: Max 20 Min 0; Tipo punteggio: D"
+        }
+      ]
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "5"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "SET PER ANESTESIA LOCO-REGIONALE PERIFERICA CONTINUA",
+      "altri_dettagli": "Categoria: Caratteristiche del catetere",
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Stabilità e Sicurezza nel blocco del catetere",
+          "punteggio_massimo": 15.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Punteggio: Max 15 Min 0; Tipo punteggio: D"
+        }
+      ]
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "5"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "SET PER ANESTESIA LOCO-REGIONALE PERIFERICA CONTINUA",
+      "altri_dettagli": "Categoria: Caratteristiche del catetere",
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Presenza di sistema di fissaggio del filtro alla cute",
+          "punteggio_massimo": 10.0,
+          "modalita_attribuzione": "T",
+          "dettagli_valutazione": "Punteggio: Si 10 No 0; Tipo punteggio: T"
+        }
+      ]
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "5"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": "Praticità del sistema di apertura del confezionamento primario a garanzia del mantenimento della sterilità del contenuto e della permanenza dell’assemblaggio tra i diversi componenti.",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "SET PER ANESTESIA LOCO-REGIONALE PERIFERICA CONTINUA",
+      "altri_dettagli": "Categoria: Caratteristiche del confezionamento",
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Praticità del sistema di apertura del confezionamento primario a garanzia del mantenimento della sterilità del contenuto e della permanenza dell’assemblaggio tra i diversi componenti.",
+          "punteggio_massimo": 5.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Punteggio: Max 5 Min 0; Tipo punteggio: D"
+        }
+      ]
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "5"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "SET PER ANESTESIA LOCO-REGIONALE PERIFERICA CONTINUA",
+      "altri_dettagli": "Categoria: Caratteristiche Etichettatura",
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Completezza e chiarezza delle informazioni presenti in etichetta per facile e immediata identificazione del prodotto.",
+          "punteggio_massimo": 5.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Punteggio: Max 5 Min 0; Tipo punteggio: D"
+        }
+      ]
+    }
+  ],
+  "documento_sorgente": "capitolato speciale"
+}

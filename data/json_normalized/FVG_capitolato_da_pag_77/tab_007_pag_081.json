@@ -1,0 +1,53 @@
+{
+  "elementi": [
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "29",
+        "30",
+        "31",
+        "32",
+        "33"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": "Robustezza e resistenza alla rottura per garantire il contenuto da inquinamenti; etichetta in lingua italiana; completezza e chiarezza delle informazioni; consistenza della confezione; maneggevolezza; numero pezzi per confezione.",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Garze non sterili",
+      "altri_dettagli": "Titolo origine: 'GARZE NON STERILI - Lotti dal n. 29 al n. 33'. Parametri di valutazione presenti con punteggi massimi: Bordi (18), Consistenza e tramatura (20), Piegatura / taglio (20), Confezionamento (12). Totale PT max indicato: 70. Testo completo dei criteri e motivazioni copiato nei dettagli dei criteri.",
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Bordi",
+          "punteggio_massimo": 18.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Bordi rivolti internamente non cuciti"
+        },
+        {
+          "parametro": "Consistenza e tramatura",
+          "punteggio_massimo": 20.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Regolarità della tessitura esente da sfilacciature e difetti, regolarità del titolo, dei bordi e tenuta delle cuciture, uniformità, spessore, morbidezza, mantenimento della consistenza dopo l'uso."
+        },
+        {
+          "parametro": "Piegatura / taglio",
+          "punteggio_massimo": 20.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Qualità del taglio ortogonale, facilità e regolarità del taglio e della piegatura per la componente garza, capacità assorbente per la componente cotone."
+        },
+        {
+          "parametro": "Confezionamento",
+          "punteggio_massimo": 12.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Funzionalità di utilizzo del confezionamento: robustezza e resistenza alla rottura tale da garantire il contenuto da eventuali inquinamenti, etichetta in lingua italiana, completezza e chiarezza di informazioni in essa contenute, consistenza della confezione e resistenza alla rottura tale da garantire il contenuto da eventuali inquinamenti, maneggevolezza, n° pezzi per confezione."
+        }
+      ]
+    }
+  ],
+  "documento_sorgente": "FVG_capitolato_da_pag_77"
+}

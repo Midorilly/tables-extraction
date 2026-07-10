@@ -1,0 +1,231 @@
+{
+  "elementi": [
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "1"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": null,
+      "altri_dettagli": "Importo biennale imponibile a base d'asta: 9800.0; Importo rinnovo biennale imponibile a base d'asta: 9800.0; Totale (biennale + rinnovo?): 19600.0; Incremento 50%: 9800.0",
+      "fabbisogno_totale": null,
+      "importo_base_asta": 4900.0,
+      "importo_totale": 29400.0,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "2"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": null,
+      "altri_dettagli": "Importo biennale imponibile a base d'asta: 1400.0; Importo rinnovo biennale imponibile a base d'asta: 1400.0; Totale: 2800.0; Incremento 50%: 1400.0",
+      "fabbisogno_totale": null,
+      "importo_base_asta": 700.0,
+      "importo_totale": 4200.0,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "3"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": null,
+      "altri_dettagli": "Importo biennale imponibile a base d'asta: 4800.0; Importo rinnovo biennale imponibile a base d'asta: 4800.0; Totale: 9600.0; Incremento 50%: 4800.0",
+      "fabbisogno_totale": null,
+      "importo_base_asta": 2400.0,
+      "importo_totale": 14400.0,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "4"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": null,
+      "altri_dettagli": "Importo biennale imponibile a base d'asta: 15600.0; Importo rinnovo biennale imponibile a base d'asta: 15600.0; Totale: 31200.0; Incremento 50%: 15600.0",
+      "fabbisogno_totale": null,
+      "importo_base_asta": 7800.0,
+      "importo_totale": 46800.0,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "5"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": null,
+      "altri_dettagli": "Importo biennale imponibile a base d'asta: 2500.0; Importo rinnovo biennale imponibile a base d'asta: 2500.0; Totale: 5000.0; Incremento 50%: 2500.0",
+      "fabbisogno_totale": null,
+      "importo_base_asta": 1250.0,
+      "importo_totale": 7500.0,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "6"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": null,
+      "altri_dettagli": "Importo biennale imponibile a base d'asta: 52000.0; Importo rinnovo biennale imponibile a base d'asta: 52000.0; Totale: 104000.0; Incremento 50%: 52000.0",
+      "fabbisogno_totale": null,
+      "importo_base_asta": 26000.0,
+      "importo_totale": 156000.0,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "7"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": null,
+      "altri_dettagli": "Importo biennale imponibile a base d'asta: 1440.0; Importo rinnovo biennale imponibile a base d'asta: 1440.0; Totale: 2880.0; Incremento 50%: 1440.0",
+      "fabbisogno_totale": null,
+      "importo_base_asta": 720.0,
+      "importo_totale": 4320.0,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "8"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": null,
+      "altri_dettagli": "Importo biennale imponibile a base d'asta: 1400.0; Importo rinnovo biennale imponibile a base d'asta: 1400.0; Totale: 2800.0; Incremento 50%: 1400.0",
+      "fabbisogno_totale": null,
+      "importo_base_asta": 700.0,
+      "importo_totale": 4200.0,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "9"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": null,
+      "altri_dettagli": "Importo biennale imponibile a base d'asta: 400.0; Importo rinnovo biennale imponibile a base d'asta: 400.0; Totale: 800.0; Incremento 50%: 400.0",
+      "fabbisogno_totale": null,
+      "importo_base_asta": 200.0,
+      "importo_totale": 1200.0,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "10"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": null,
+      "altri_dettagli": "Importo biennale imponibile a base d'asta: 800.0; Importo rinnovo biennale imponibile a base d'asta: 800.0; Totale: 1600.0; Incremento 50%: 800.0",
+      "fabbisogno_totale": null,
+      "importo_base_asta": 400.0,
+      "importo_totale": 2400.0,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "11"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": null,
+      "altri_dettagli": "Importo biennale imponibile a base d'asta: 300.0; Importo rinnovo biennale imponibile a base d'asta: 300.0; Totale: 600.0; Incremento 50%: 300.0",
+      "fabbisogno_totale": null,
+      "importo_base_asta": 150.0,
+      "importo_totale": 900.0,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Riepilogo Totale tabella",
+      "altri_dettagli": "Totale annuale imponibile a base d'asta: 45220.0; Totale biennale imponibile a base d'asta: 90440.0; Totale rinnovo biennale imponibile a base d'asta: 90440.0; Totale complessivo (Totale): 180880.0; Incremento 50% (aggregato): 90440.0; Totale complessivo finale: 271320.0",
+      "fabbisogno_totale": null,
+      "importo_base_asta": 45220.0,
+      "importo_totale": 271320.0,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    }
+  ],
+  "documento_sorgente": "capitolato speciale"
+}

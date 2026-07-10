@@ -1,0 +1,86 @@
+{
+  "elementi": [
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "CEROTTI/MEDICAZIONI",
+      "altri_dettagli": "Tabella: 'CEROTTI/MEDICAZIONI - Lotti dal n. 1 al n. 14'. Parametri di valutazione elencati per i lotti indicati. Riepilogo punteggi massimi totale: 70.",
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Resistenza alla trazione",
+          "punteggio_massimo": 8.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Resistenza alla trazione durante l'applicazione."
+        },
+        {
+          "parametro": "Adesività e tenuta del posizionamento",
+          "punteggio_massimo": 12.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Potere adesivo, spalmatura della massa adesiva, capacità di riposizionamento senza perdita di aderenza e capacità di mantenere la posizione di applicazione senza distacchi accidentali/arricciamenti per attrito o sfregamento."
+        },
+        {
+          "parametro": "Tollerabilità cutanea (sì/no)",
+          "punteggio_massimo": 7.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Assenza di agenti che rappresentino un potenziale allergenico o causino irritazione cutanea e bruciore. Modalità valutativa indicata come binaria (sì/no)."
+        },
+        {
+          "parametro": "Assenza di residui di adesivo dopo la rimozione",
+          "punteggio_massimo": 7.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Facilità di rimozione senza lasciare residui sulla cute."
+        },
+        {
+          "parametro": "Facilità di applicazione e atraumaticità alla rimozione",
+          "punteggio_massimo": 10.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Presenza di apertura peel open o altra idonea apertura, facilità di posizionamento e presenza di guida (es. quadrettatura) sul foglio di protezione, morbidezza, adattabilità/conformabilità, bordi e facilità di rimozione (atraumaticità)."
+        },
+        {
+          "parametro": "Adeguatezza delle dimensioni dell'adesivo rispetto alla compressa",
+          "punteggio_massimo": 8.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Dimensione dell'area adesiva in relazione alla misura dell'adeguata area attiva."
+        },
+        {
+          "parametro": "Traspirabilità e permeabilità ai liquidi",
+          "punteggio_massimo": 10.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Capacità di gestione/assorbimento dei fluidi, assorbimento verticale senza il diffondersi verso i lati della medicazione, capacità di mantenere la forma dopo l'assorbimento dei liquidi."
+        },
+        {
+          "parametro": "Confezionamento",
+          "punteggio_massimo": 8.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Funzionalità di utilizzo del confezionamento: robustezza e resistenza alla rottura tale da garantire il contenuto da eventuali inquinamenti, etichetta in lingua italiana, completezza e chiarezza di informazioni in essa contenute, consistenza della confezione e resistenza alla rottura tale da garantire il contenuto da eventuali inquinamenti, maneggevolezza, n° pezzi per confezione (ove pertinente)."
+        }
+      ]
+    }
+  ],
+  "documento_sorgente": "FVG_capitolato_da_pag_77"
+}

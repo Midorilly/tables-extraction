@@ -1,0 +1,60 @@
+{
+  "elementi": [
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Garze sterili",
+      "altri_dettagli": "Tabella: PARAMETRI DI VALUTAZIONE per GARZE STERILI. Applicabile ai lotti dal n. 15 al n. 26. Totale punteggio massimo indicato: 70. Le descrizioni motivazionali dei criteri sono riportate nei dettagli dei criteri.",
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Bordi",
+          "punteggio_massimo": 18.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Bordi rivolti internamente non cuciti."
+        },
+        {
+          "parametro": "Consistenza e tramatura",
+          "punteggio_massimo": 20.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Regolarità della tessitura esente da sfilacciature e difetti, regolarità del titolo, dei bordi e tenuta delle cuciture, presenza di filo di bario saldamente incorporato, uniformità, spessore, morbidezza, mantenimento della consistenza dopo l'uso."
+        },
+        {
+          "parametro": "Piegatura / taglio",
+          "punteggio_massimo": 20.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Qualità del taglio ortogonale, facilità e regolarità del taglio e della piegatura per la componente garza, capacità assorbente per la componente cotone."
+        },
+        {
+          "parametro": "Confezionamento",
+          "punteggio_massimo": 12.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Funzionalità di utilizzo del confezionamento: ingombro, robustezza e resistenza alla rottura tale da garantire il contenuto da eventuali inquinamenti, maneggevolezza, facilità di apertura, etichetta in lingua italiana rimovibile ed adesiva per la tracciabilità, completezza e chiarezza di informazioni in essa contenute, presenza e facilità di individuazione dell'invito all'apertura, facilità di apertura in modo asettico della confezione, consistenza della confezione, n° pezzi per confezione (ove pertinente)."
+        }
+      ]
+    }
+  ],
+  "documento_sorgente": "FVG_capitolato_da_pag_77"
+}
