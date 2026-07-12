@@ -1,0 +1,717 @@
+{
+    "document_name": "FVG_capitolato_da_pag_77.pdf",
+    "metrics_summary": {
+        "total_tables": 14,
+        "total_lots": 56,
+        "total_sublots": 128
+    },
+    "logical_tables": [
+        {
+            "table_id": 1,
+            "description": "Punteggio",
+            "pages_spanned": [
+                28
+            ],
+            "headers": {
+                "is_multirow": false,
+                "expected_columns": [
+                    "",
+                    "PUNTEGGIO MASSIMO"
+                ]
+            }
+        },
+        {
+            "table_id": 2,
+            "description": "Dati",
+            "pages_spanned": [
+                73
+            ],
+            "headers": {
+                "is_multirow": false,
+                "expected_columns": []
+            }
+        },
+        {
+            "table_id": 3,
+            "description": "Documentazione",
+            "pages_spanned": [
+                79
+            ],
+            "headers": {
+                "is_multirow": false,
+                "expected_columns": [
+                    "N.",
+                    "DOCUMENTO RICHIESTO",
+                    "NELL'INDICE:"
+                ]
+            }
+        },
+        {
+            "table_id": 4,
+            "description": "CEROTTI/MEDICAZIONI",
+            "pages_spanned": [
+                80
+            ],
+            "headers": {
+                "is_multirow": true,
+                "expected_columns": {
+                    "0": "CEROTTI/MEDICAZIONI - Lotti dal n. 1 al n. 14",
+                    "1": [
+                        "PARAMETRI DI VALUTAZIONE",
+                        "PT max",
+                        "CRITERIO MOTIVAZIONALE"
+                    ]
+                }
+            }
+        },
+        {
+            "table_id": 5,
+            "description": "GARZE STERILI",
+            "pages_spanned": [
+                80,
+                81
+            ],
+            "headers": {
+                "is_multirow": true,
+                "expected_columns": {
+                    "0": "GARZE STERILI - Lotti dal n. 15 al n. 26",
+                    "1": [
+                        "PARAMETRI DI VALUTAZIONE",
+                        "PT max",
+                        "CRITERIO MOTIVAZIONALE"
+                    ]
+                }
+            }
+        },
+        {
+            "table_id": 6,
+            "description": "GARZE LAPAROTOMICHE",
+            "pages_spanned": [
+                81
+            ],
+            "headers": {
+                "is_multirow": true,
+                "expected_columns": {
+                    "0": "GARZE LAPAROTOMICHE - Lotti dal n. 27 al n. 28",
+                    "1": [
+                        "PARAMETRI DI VALUTAZIONE",
+                        "PT max",
+                        "CRITERIO MOTIVAZIONALE"
+                    ]
+                }
+            }
+        },
+        {
+            "table_id": 7,
+            "description": "GARZE NON STERILI",
+            "pages_spanned": [
+                81
+            ],
+            "headers": {
+                "is_multirow": true,
+                "expected_columns": {
+                    "0": "GARZE NON STERILI - Lotti dal n. 29 al n. 33",
+                    "1": [
+                        "PARAMETRI DI VALUTAZIONE",
+                        "PT max",
+                        "CRITERIO MOTIVAZIONALE"
+                    ]
+                }
+            }
+        },
+        {
+            "table_id": 8,
+            "description": "BENDE ADESIVE",
+            "pages_spanned": [
+                81,
+                82
+            ],
+            "headers": {
+                "is_multirow": true,
+                "expected_columns": {
+                    "0": "BENDE ADESIVE - Lotti dal n. 34 al n. 39",
+                    "1": [
+                        "PARAMETRI DI VALUTAZIONE",
+                        "PT max",
+                        "CRITERIO MOTIVAZIONALE"
+                    ]
+                }
+            }
+        },
+        {
+            "table_id": 9,
+            "description": "BENDE NON ADESIVE",
+            "pages_spanned": [
+                82
+            ],
+            "headers": {
+                "is_multirow": true,
+                "expected_columns": {
+                    "0": "BENDE NON ADESIVE - Lotti dal n. 40 al n. 44",
+                    "1": [
+                        "PARAMETRI DI VALUTAZIONE",
+                        "PT max",
+                        "CRITERIO MOTIVAZIONALE"
+                    ]
+                }
+            }
+        },
+        {
+            "table_id": 10,
+            "description": "BENDE MEDICATE",
+            "pages_spanned": [
+                82
+            ],
+            "headers": {
+                "is_multirow": true,
+                "expected_columns": {
+                    "0": "BENDE MEDICATE - Lotti dal n. 45 al n. 46",
+                    "1": [
+                        "PARAMETRI DI VALUTAZIONE",
+                        "PT max",
+                        "CRITERIO MOTIVAZIONALE"
+                    ]
+                }
+            }
+        },
+        {
+            "table_id": 11,
+            "description": "OVATTA",
+            "pages_spanned": [
+                82
+            ],
+            "headers": {
+                "is_multirow": true,
+                "expected_columns": {
+                    "0": "OVATTA - Lotto n. 47",
+                    "1": [
+                        "PARAMETRI DI VALUTAZIONE",
+                        "PT max",
+                        "CRITERIO MOTIVAZIONALE"
+                    ]
+                }
+            }
+        },
+        {
+            "table_id": 12,
+            "description": "GIUDIZIO",
+            "pages_spanned": [
+                83
+            ],
+            "headers": {
+                "is_multirow": false,
+                "expected_columns": [
+                    "GIUDIZIO",
+                    "COEFFICIENTE"
+                ]
+            }
+        },
+        {
+            "table_id": 13,
+            "description": "Allegato",
+            "pages_spanned": [
+                84,
+                85,
+                86,
+                87,
+                88,
+                89,
+                90,
+                91,
+                92
+            ],
+            "headers": {
+                "is_multirow": true,
+                "expected_columns": {
+                    "0": "Allegato al Capitolato Tecnico gara ARCS ID.23PRE002 CUCSA FVG: Gara a procedura aperta ai sensi dell’art. 71 del D.lgs. n. 36/2023 per l’affidamento della fornitura di MEDICAZIONI GENERALI per un periodo di 48 mesi per gli Enti del SSR della Regione Friuli Venezia Giulia Descrizione tecnica dei lotti, fabbisogni presunti per un periodo di 48 mesi, prezzi complessivi a base d'asta, opzioni contrattuali e garanzia provvisoria:",
+                    "1": [
+                        "Lotto",
+                        "Voce",
+                        "Descrizione Tecnica",
+                        "Unità di Misura",
+                        "Campionatura",
+                        "ASU.FC",
+                        "ASU.GI",
+                        "AS.FO",
+                        "BURLO TRIESTE",
+                        "CRO AVIANO",
+                        "Fabbisogni totali presunti per 48 mesi riferiti all'unità di misura",
+                        "Prezzo unitario riferito all'unità di misura",
+                        "Importo complessivo a base d'asta per 48 mesi (non superabile pena esclusione)",
+                        "Importo quinto d'obbligo (+20%)",
+                        "Importo opzione quantitativa e prodotti aggiuntivi (ulteriori misure / formati / confezionamenti) rispetto a quelli indicati (+100%)",
+                        "Importo opzione di proroga contrattuale (12 mesi)",
+                        "Importo opzione di proroga contrattuale (6 mesi)",
+                        "Importo complessivo incluse opzioni contrattuali",
+                        "Garanzia provvisoria (2% su importo complessivo)"
+                    ]
+                }
+            }
+        },
+        {
+            "table_id": 14,
+            "description": "Quadro economico",
+            "pages_spanned": [
+                93
+            ],
+            "headers": {
+                "is_multirow": true,
+                "expected_columns": {
+                    "0": "ID.23PRE002 CUCSA FVG - Gara a procedura aperta ai sensi dell’art. 71 del D.lgs. n. 36/2023 per l’affidamento della fornitura di MEDICAZIONI GENERALI per un periodo di 48 mesi per gli Enti del SSR della Regione Friuli Venezia Giulia",
+                    "1": "QUADRO ECONOMICO DI SPESA"
+                }
+            }
+        }
+    ],
+    "hierarchy": [
+        {
+            "lot_id": "1",
+            "sublots": [
+                "a",
+                "b",
+                "c"
+            ]
+        },
+        {
+            "lot_id": "2",
+            "sublots": [
+                "a",
+                "b",
+                "c"
+            ]
+        },
+        {
+            "lot_id": "3",
+            "sublots": [
+                "a",
+                "b",
+                "c"
+            ]
+        },
+        {
+            "lot_id": "4",
+            "sublots": [
+                "a",
+                "b",
+                "c"
+            ]
+        },
+        {
+            "lot_id": "5",
+            "sublots": [
+                "a",
+                "b",
+                "c"
+            ]
+        },
+        {
+            "lot_id": "6",
+            "sublots": [
+                "a",
+                "b",
+                "c"
+            ]
+        },
+        {
+            "lot_id": "7",
+            "sublots": []
+        },
+        {
+            "lot_id": "8",
+            "sublots": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f"
+            ]
+        },
+        {
+            "lot_id": "9",
+            "sublots": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f"
+            ]
+        },
+        {
+            "lot_id": "10",
+            "sublots": [
+                "a",
+                "b"
+            ]
+        },
+        {
+            "lot_id": "11",
+            "sublots": [
+                "a",
+                "b",
+                "c",
+                "d"
+            ]
+        },
+        {
+            "lot_id": "12",
+            "sublots": []
+        },
+        {
+            "lot_id": "13",
+            "sublots": []
+        },
+        {
+            "lot_id": "14",
+            "sublots": []
+        },
+        {
+            "lot_id": "15",
+            "sublots": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f"
+            ]
+        },
+        {
+            "lot_id": "16",
+            "sublots": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j",
+                "k",
+                "l"
+            ]
+        },
+        {
+            "lot_id": "17",
+            "sublots": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f"
+            ]
+        },
+        {
+            "lot_id": "18",
+            "sublots": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g"
+            ]
+        },
+        {
+            "lot_id": "19",
+            "sublots": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e"
+            ]
+        },
+        {
+            "lot_id": "20",
+            "sublots": []
+        },
+        {
+            "lot_id": "21",
+            "sublots": [
+                "a",
+                "b",
+                "c",
+                "d"
+            ]
+        },
+        {
+            "lot_id": "22",
+            "sublots": []
+        },
+        {
+            "lot_id": "23",
+            "sublots": []
+        },
+        {
+            "lot_id": "24",
+            "sublots": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e"
+            ]
+        },
+        {
+            "lot_id": "25",
+            "sublots": [
+                "a",
+                "b"
+            ]
+        },
+        {
+            "lot_id": "26",
+            "sublots": [
+                "a",
+                "b"
+            ]
+        },
+        {
+            "lot_id": "27",
+            "sublots": [
+                "a",
+                "b",
+                "c"
+            ]
+        },
+        {
+            "lot_id": "28",
+            "sublots": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j",
+                "k"
+            ]
+        },
+        {
+            "lot_id": "29",
+            "sublots": [
+                "a",
+                "b",
+                "c"
+            ]
+        },
+        {
+            "lot_id": "30",
+            "sublots": [
+                "a",
+                "b",
+                "c"
+            ]
+        },
+        {
+            "lot_id": "31",
+            "sublots": [
+                "a",
+                "b",
+                "c",
+                "d"
+            ]
+        },
+        {
+            "lot_id": "32",
+            "sublots": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f"
+            ]
+        },
+        {
+            "lot_id": "33",
+            "sublots": [
+                "a",
+                "b"
+            ]
+        },
+        {
+            "lot_id": "34",
+            "sublots": [
+                "a",
+                "b"
+            ]
+        },
+        {
+            "lot_id": "35",
+            "sublots": [
+                "a",
+                "b",
+                "c"
+            ]
+        },
+        {
+            "lot_id": "36",
+            "sublots": [
+                "a",
+                "b"
+            ]
+        },
+        {
+            "lot_id": "37",
+            "sublots": [
+                "a",
+                "b"
+            ]
+        },
+        {
+            "lot_id": "38",
+            "sublots": []
+        },
+        {
+            "lot_id": "39",
+            "sublots": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j",
+                "k"
+            ]
+        },
+        {
+            "lot_id": "40",
+            "sublots": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j"
+            ]
+        },
+        {
+            "lot_id": "41",
+            "sublots": [
+                "a",
+                "b",
+                "c",
+                "d"
+            ]
+        },
+        {
+            "lot_id": "42",
+            "sublots": [
+                "a",
+                "b",
+                "c",
+                "d"
+            ]
+        },
+        {
+            "lot_id": "43",
+            "sublots": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f"
+            ]
+        },
+        {
+            "lot_id": "44",
+            "sublots": [
+                "a",
+                "b"
+            ]
+        },
+        {
+            "lot_id": "45",
+            "sublots": []
+        },
+        {
+            "lot_id": "46",
+            "sublots": [
+                "a",
+                "b"
+            ]
+        },
+        {
+            "lot_id": "47",
+            "sublots": []
+        },
+        {
+            "lot_id": "48",
+            "sublots": []
+        },
+        {
+            "lot_id": "49",
+            "sublots": []
+        },
+        {
+            "lot_id": "50",
+            "sublots": []
+        },
+        {
+            "lot_id": "51",
+            "sublots": []
+        },
+        {
+            "lot_id": "52",
+            "sublots": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h"
+            ]
+        },
+        {
+            "lot_id": "53",
+            "sublots": [
+                "a",
+                "b"
+            ]
+        },
+        {
+            "lot_id": "54",
+            "sublots": [
+                "a",
+                "b",
+                "c"
+            ]
+        },
+        {
+            "lot_id": "55",
+            "sublots": [
+                "a",
+                "b"
+            ]
+        },
+        {
+            "lot_id": "56",
+            "sublots": [
+                "a",
+                "b",
+                "c"
+            ]
+        }
+    ]
+}

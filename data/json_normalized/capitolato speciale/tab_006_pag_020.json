@@ -1,0 +1,59 @@
+{
+  "elementi": [
+    {
+      "numero_gara": null,
+      "numeri_lotto": [],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": null,
+      "altri_dettagli": null,
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Eccellente",
+          "punteggio_massimo": 1.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Si esclude la possibilità di soluzioni migliori"
+        },
+        {
+          "parametro": "Ottimo",
+          "punteggio_massimo": 0.8,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Aspetti positivi elevati o ottima rispondenza alle"
+        },
+        {
+          "parametro": "Buono",
+          "punteggio_massimo": 0.6,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Aspetti positivi evidenti ma inferiori a soluzioni aspettative"
+        },
+        {
+          "parametro": "Discreto",
+          "punteggio_massimo": 0.4,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Aspetti positivi apprezzabilmente di qualche pregio ottimali"
+        },
+        {
+          "parametro": "Modesto",
+          "punteggio_massimo": 0.2,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Appena sufficiente"
+        },
+        {
+          "parametro": "Assente/irrilevante",
+          "punteggio_massimo": 0.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Nessuna proposta o miglioramento irrilevante"
+        }
+      ]
+    }
+  ],
+  "documento_sorgente": "capitolato speciale"
+}

@@ -1,0 +1,385 @@
+{
+  "elementi": [
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "1"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": "ago epidurale con punta tipo Tuohy da G16 e G18",
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "SET PER ANESTESIA PERIDURALE CONTINUA ago epidurale con punta tipo Tuohy da G16 e G18",
+      "altri_dettagli": null,
+      "fabbisogno_totale": 350.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "2"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "SET PER ANESTESIA PERIDURALE CONTINUA per pazienti obesi",
+      "altri_dettagli": null,
+      "fabbisogno_totale": 50.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "3"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "SET PER ANESTESIA PERIDURALE PEDIATRICO",
+      "altri_dettagli": null,
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "3"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": "G19 x 50mm (catetere 23G)",
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "G19 x 50mm (catetere 23G)",
+      "altri_dettagli": null,
+      "fabbisogno_totale": 40.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "3"
+      ],
+      "sub_lotto": "b",
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": "G18 x 50mm (catetere 20G)",
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "G18 x 50mm (catetere 20G)",
+      "altri_dettagli": null,
+      "fabbisogno_totale": 40.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "4"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": "ago epidurale con punta tipo Tuohy da G16 e G18",
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "SET PER ANESTESIA COMBINATA PERIDURALE E SPINALE ago epidurale con punta tipo Tuohy da G16 e G18",
+      "altri_dettagli": null,
+      "fabbisogno_totale": 300.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "5"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "SET PER ANESTESIA LOCO-REGIONALE PERIFERICA CONTINUA",
+      "altri_dettagli": null,
+      "fabbisogno_totale": 50.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "6"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "SET PER BLOCCHI PERIFERICI ECOGUIDATI",
+      "altri_dettagli": null,
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "6"
+      ],
+      "sub_lotto": "a",
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": "Calibro G21/22 lunghezza cannula 100 mm ca",
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Calibro G21/22 lunghezza cannula 100 mm ca",
+      "altri_dettagli": null,
+      "fabbisogno_totale": 600.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "6"
+      ],
+      "sub_lotto": "b",
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": "Calibro G21/22 lunghezza cannula 80mm ca",
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Calibro G21/22 lunghezza cannula 80mm ca",
+      "altri_dettagli": null,
+      "fabbisogno_totale": 1000.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "6"
+      ],
+      "sub_lotto": "c",
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": "Calibro G21/22 lunghezza cannula 50mm ca",
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Calibro G21/ 22 lunghezza cannula 50mm ca",
+      "altri_dettagli": null,
+      "fabbisogno_totale": 1000.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "7"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "SET PER BLOCCHI PERIFERICI ECOGUIDATI PEDIATRICI",
+      "altri_dettagli": null,
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "7"
+      ],
+      "sub_lotto": "a",
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": "Calibro G24 lunghezza cannula 25 mm ca",
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Calibro G24 lunghezza cannula 25 mm ca",
+      "altri_dettagli": null,
+      "fabbisogno_totale": 30.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "7"
+      ],
+      "sub_lotto": "b",
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": "Calibro G24 lunghezza cannula 40mm ca",
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Calibro G24 lunghezza cannula 40mm ca",
+      "altri_dettagli": null,
+      "fabbisogno_totale": 30.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "8"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "AGHI A PUNTA A MATITA per anestesia spinale e puntura diagnostica lombare pediatrica.",
+      "altri_dettagli": null,
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "8"
+      ],
+      "sub_lotto": "a",
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": "27 G x 25 mm",
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Misure 27 G x 25 mm.",
+      "altri_dettagli": null,
+      "fabbisogno_totale": 50.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "8"
+      ],
+      "sub_lotto": "b",
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": "27 G x 50 mm",
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Misure 27 G x 50 mm.",
+      "altri_dettagli": null,
+      "fabbisogno_totale": 50.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "9"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": "22 G X 40 mm",
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "AGHI CON PUNTA DI QUINCKE per anestesia spinale pediatrica 22 G X 40 mm",
+      "altri_dettagli": null,
+      "fabbisogno_totale": 100.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "10"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": "G25 X120 mm",
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "AGHI CON PUNTA DI QUINCKE per anestesia spinale G25 X120 mm",
+      "altri_dettagli": null,
+      "fabbisogno_totale": 100.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "11"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": "25G x 25 mm",
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "AGO PER ANESTESIA CAUDALE 25G x 25 mm",
+      "altri_dettagli": null,
+      "fabbisogno_totale": 50.0,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": []
+    }
+  ],
+  "documento_sorgente": "capitolato speciale"
+}

@@ -1,0 +1,35 @@
+{
+  "elementi": [
+    {
+      "numero_gara": null,
+      "numeri_lotto": [],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": null,
+      "altri_dettagli": "Punteggio totale dichiarato nella tabella: 100",
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Offerta tecnica",
+          "punteggio_massimo": 70.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": null
+        },
+        {
+          "parametro": "Offerta economica",
+          "punteggio_massimo": 30.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": null
+        }
+      ]
+    }
+  ],
+  "documento_sorgente": "FVG_capitolato_da_pag_77"
+}

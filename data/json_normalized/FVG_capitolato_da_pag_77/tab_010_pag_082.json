@@ -1,0 +1,50 @@
+{
+  "elementi": [
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "45",
+        "46"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "Bende medicate",
+      "altri_dettagli": "Testo originale: 'BENDE MEDICATE - Lotti dal n. 45 al n. 46'. Parametri di valutazione presenti in tabella con relativi punteggi e descrizioni motivazionali. Totale PT max indicato: 70. Criteri: Caratteristiche del tessuto (20), Aderenza / conformabilità (20), Facilità di applicazione (18), Confezionamento (12).",
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Caratteristiche del tessuto",
+          "punteggio_massimo": 20.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Uniformità della spalmatura della sostanza, assorbimento verticale senza il diffondersi verso i lati della medicazione."
+        },
+        {
+          "parametro": "Aderenza / conformabilità",
+          "punteggio_massimo": 20.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Capacità di riposizionamento senza perdita di aderenza, adattabilità e conformabilità al sito di applicazione durante l’utilizzo."
+        },
+        {
+          "parametro": "Facilità di applicazione",
+          "punteggio_massimo": 18.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Adattabilità al letto della lesione, fruibilità su tutta la lunghezza, possibilità di ritagliare la medicazione offerta."
+        },
+        {
+          "parametro": "Confezionamento",
+          "punteggio_massimo": 12.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Funzionalità di utilizzo del confezionamento: robustezza e resistenza alla rottura tale da garantire il contenuto da eventuali inquinamenti, l'etichetta in lingua italiana, la completezza e chiarezza di informazioni in essa contenute, facilità di apertura e di identificazione."
+        }
+      ]
+    }
+  ],
+  "documento_sorgente": "FVG_capitolato_da_pag_77"
+}

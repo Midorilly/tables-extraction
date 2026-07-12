@@ -1,0 +1,68 @@
+{
+  "elementi": [
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "1",
+        "2"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "SET PER ANESTESIA PERIDURALE CONTINUA",
+      "altri_dettagli": "Tabella di valutazione riferita a LOTTO 1 e LOTTO 2. Punteggi espressi come 'Max X Min 0'. Le righe della tabella definiscono i criteri di valutazione (tipo punteggio 'D').",
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Caratteristiche dell'ago - Agevole penetrazione e scorrevolezza dell'ago nel passaggio attraverso i tessuti.",
+          "punteggio_massimo": 15.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Max 15 Min 0"
+        },
+        {
+          "parametro": "Caratteristiche dell'ago - Presa salda ed ergonomica che consenta fine maneggevolezza per percezione piani di penetrazione.",
+          "punteggio_massimo": 20.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Max 20 Min 0"
+        },
+        {
+          "parametro": "Caratteristica della siringa - Scorrevolezza e tenuta dello stantuffo LOR",
+          "punteggio_massimo": 15.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Max 15 Min 0"
+        },
+        {
+          "parametro": "Caratteristiche del catetere - Trasparenza, atraumaticità della punta, numero di fori laterali per buona infusione, identificazione per imaging, resistenza all'inginocchiamento.",
+          "punteggio_massimo": 10.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Max 10 Min 0"
+        },
+        {
+          "parametro": "Caratteristiche del catetere - Caratteristiche e tenuta delle connessioni",
+          "punteggio_massimo": 10.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Max 10 Min 0"
+        },
+        {
+          "parametro": "Caratteristiche del confezionamento - Praticità del sistema di apertura del confezionamento primario a garanzia del mantenimento della sterilità del contenuto e della permanenza dell'assemblaggio.",
+          "punteggio_massimo": 5.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Max 5 Min 0"
+        },
+        {
+          "parametro": "Caratteristiche Etichettatura - Completezza e chiarezza delle informazioni presenti in etichetta per facile e immediata identificazione del prodotto.",
+          "punteggio_massimo": 5.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Max 5 Min 0"
+        }
+      ]
+    }
+  ],
+  "documento_sorgente": "capitolato speciale"
+}

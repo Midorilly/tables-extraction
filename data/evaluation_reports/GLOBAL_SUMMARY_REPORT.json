@@ -1,0 +1,43 @@
+{
+    "total_documents_evaluated": 5,
+    "systems_summary": {
+        "baseline_docling": {
+            "global_fragmentation": {
+                "total_expected_tables": 30,
+                "total_extra_fragments": 15
+            },
+            "global_header_alignment": {
+                "total_expected_columns": 136,
+                "total_aligned_columns": 47,
+                "global_alignment_score_percentage": 34.6
+            },
+            "global_hierarchy_recall": {
+                "total_lots_expected": 67,
+                "total_lots_found": 67,
+                "global_lot_recall_percentage": 100.0,
+                "total_sublots_expected": 192,
+                "total_sublots_mapped": 9,
+                "global_sublot_hierarchy_score_percentage": 4.7
+            }
+        },
+        "custom_pipeline": {
+            "global_fragmentation": {
+                "total_expected_tables": 30,
+                "total_extra_fragments": 0
+            },
+            "global_header_alignment": {
+                "total_expected_columns": 136,
+                "total_aligned_columns": 129,
+                "global_alignment_score_percentage": 94.9
+            },
+            "global_hierarchy_recall": {
+                "total_lots_expected": 67,
+                "total_lots_found": 67,
+                "global_lot_recall_percentage": 100.0,
+                "total_sublots_expected": 192,
+                "total_sublots_mapped": 192,
+                "global_sublot_hierarchy_score_percentage": 100.0
+            }
+        }
+    }
+}

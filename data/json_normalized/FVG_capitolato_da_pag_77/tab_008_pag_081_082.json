@@ -1,0 +1,60 @@
+{
+  "elementi": [
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": "Funzionalità di utilizzo del confezionamento: robustezza e resistenza alla rottura tale da garantire il contenuto da eventuali inquinamenti, etichetta in lingua italiana, completezza e chiarezza di informazioni in essa contenute, facilità di apertura e di identificazione, tipologia di rocchetto ove pertinente.",
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "BENDE ADESIVE",
+      "altri_dettagli": "Tabella criteri di valutazione per Lotti dal n. 34 al n. 39. Riga con valore '70' presente senza parametro associato (probabile totale punteggi qualitativi). 'Facilità di applicazione' non riporta PT max nella tabella.",
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Caratteristiche del tessuto",
+          "punteggio_massimo": 20.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Tramatura e resistenza sotto trazione, adattabilità, conformabilità durante l’utilizzo."
+        },
+        {
+          "parametro": "Adesività / tenuta del posizionamento",
+          "punteggio_massimo": 20.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Potere adesivo, capacità di riposizionamento senza perdita aderenza."
+        },
+        {
+          "parametro": "Facilità di applicazione",
+          "punteggio_massimo": null,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Adattabilità al letto della lesione, fruibilità su tutta la lunghezza, possibilità di ritagliare la medicazione offerta."
+        },
+        {
+          "parametro": "Confezionamento",
+          "punteggio_massimo": 12.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": "Funzionalità di utilizzo del confezionamento: robustezza e resistenza alla rottura tale da garantire il contenuto da eventuali inquinamenti, etichetta in lingua italiana, completezza e chiarezza di informazioni in essa contenute, facilità di apertura e di identificazione, tipologia di rocchetto ove pertinente."
+        },
+        {
+          "parametro": "Totale punteggio parametri qualitativi (riga tabella)",
+          "punteggio_massimo": 70.0,
+          "modalita_attribuzione": null,
+          "dettagli_valutazione": null
+        }
+      ]
+    }
+  ],
+  "documento_sorgente": "FVG_capitolato_da_pag_77"
+}

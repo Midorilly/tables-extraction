@@ -1,0 +1,90 @@
+{
+    "document_name": "capitolato speciale.json",
+    "methods": {
+        "baseline_docling": {
+            "tables_and_fragmentation": {
+                "expected_logical_tables": 12,
+                "extracted_useful_tables_count": 17,
+                "extracted_useful_tables_list": [
+                    "Oggetto e importo",
+                    "Prima Tabella di Prospetto riepilogativo",
+                    "Seconda Tabella di Prospetto riepilogativo",
+                    "Capacità tecnico - professionale",
+                    "Cauzione provvisoria",
+                    "Contributo ANAC",
+                    "Qualità e valore tecnico",
+                    "Prima Tabella di Lotti 1 e 2",
+                    "Seconda Tabella di Lotti 1 e 2",
+                    "Prima Tabella di Lotti 3 e 4",
+                    "Seconda Tabella di Lotti 3 e 4",
+                    "Lotto 5",
+                    "Lotti 6 e 7",
+                    "Prima Tabella di Lotti 8, 9, 10 e 11",
+                    "Seconda Tabella di Lotti 8, 9, 10 e 11",
+                    "Prima Tabella diElenco set e aghi",
+                    "Seconda Tabella di Elenco set e aghi"
+                ],
+                "useless_tables_noise_count": 1,
+                "useless_tables_noise_list": [
+                    "Prospetto inutile"
+                ],
+                "fragmentation_extra_fragments": 5
+            },
+            "header_integrity": {
+                "expected_sequence_length": 47,
+                "predicted_sequence_length": 50,
+                "perfectly_aligned_columns": 22,
+                "alignment_score_percentage": 46.8
+            },
+            "hierarchy_and_entities": {
+                "lots_expected": 11,
+                "lots_found": 11,
+                "lot_recall_percentage": 100.0,
+                "missing_lots_ids": [],
+                "sublots_expected": 9,
+                "sublots_mapped_correctly": 9,
+                "sublot_hierarchy_score_percentage": 100.0,
+                "hierarchy_losses_details": []
+            }
+        },
+        "custom_pipeline": {
+            "tables_and_fragmentation": {
+                "expected_logical_tables": 12,
+                "extracted_useful_tables_count": 12,
+                "extracted_useful_tables_list": [
+                    "Oggetto e importo",
+                    "Prospetto riepilogativo",
+                    "Capacità tecnico - professionale",
+                    "Cauzione provvisoria",
+                    "Contributo ANAC",
+                    "Qualità e valore tecnico",
+                    "Lotti 1 e 2",
+                    "Lotti 3 e 4",
+                    "Lotto 5",
+                    "Lotti 6 e 7",
+                    "Lotti 8, 9, 10 e 11",
+                    "Elenco set e aghi"
+                ],
+                "useless_tables_noise_count": 0,
+                "useless_tables_noise_list": [],
+                "fragmentation_extra_fragments": 0
+            },
+            "header_integrity": {
+                "expected_sequence_length": 47,
+                "predicted_sequence_length": 47,
+                "perfectly_aligned_columns": 47,
+                "alignment_score_percentage": 100.0
+            },
+            "hierarchy_and_entities": {
+                "lots_expected": 11,
+                "lots_found": 11,
+                "lot_recall_percentage": 100.0,
+                "missing_lots_ids": [],
+                "sublots_expected": 9,
+                "sublots_mapped_correctly": 9,
+                "sublot_hierarchy_score_percentage": 100.0,
+                "hierarchy_losses_details": []
+            }
+        }
+    }
+}

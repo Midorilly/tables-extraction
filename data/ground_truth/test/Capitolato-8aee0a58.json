@@ -1,0 +1,34 @@
+{
+    "document_name": "Capitolato-8aee0a58.pdf",
+    "metrics_summary": {
+        "total_tables": 1,
+        "total_lots": 2,
+        "total_sublots": 0
+    },
+    "logical_tables": [
+        {
+            "table_id": 1,
+            "description": "Lotti 1-2",
+            "pages_spanned": [
+                1
+            ],
+            "headers": {
+                "is_multirow": true,
+                "expected_columns": {
+                    "0": "CAPITOLATO TECNICO",
+                    "1": "Procedura negoziata per l'acquisizione della fornitura di “siringhe da infusione ed irrigazione monouso con sistema di sicurezza e da emogas”, articolata in n. 2 lotti, per un periodo di 24 (ventiquattro) mesi, da destinare alle esigenze della S.C. Anestesia e Rianimazione- Art. 36, co.2, lett. b), D.Lgs. 50/2016 e ss.mm.ii. (Nuovo Codice dei Contratti Pubblici)- N. GARA: 7855306",
+                    "2": [
+                        "N° LOTTI",
+                        "C.N.D",
+                        "Caratteristiche di base",
+                        "U.M.",
+                        "Fabbisogno per 24 mesi",
+                        "Importo complessivo netto presunto per 24 mesi",
+                        "C.I.G",
+                        "CAMPIONI A TITOLO GRATUITO"
+                    ]
+                }
+            }
+        }
+    ]
+}

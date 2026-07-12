@@ -1,0 +1,27 @@
+{
+    "document_name": "capitolato tecnico.pdf",
+    "metrics_summary": {
+        "total_tables": 1,
+        "total_lots": 1,
+        "total_sublots": 0
+    },
+    "logical_tables": [
+        {
+            "table_id": 1,
+            "description": "Dettaglio Tecnico Economico Lotto 1",
+            "pages_spanned": [
+                5
+            ],
+            "headers": {
+                "is_multirow": false,
+                "expected_columns": [
+                    "LOTTO",
+                    "CND",
+                    "DESCRIZIONE",
+                    "Unità",
+                    "Qtà annua"
+                ]
+            }
+        }
+    ]
+}

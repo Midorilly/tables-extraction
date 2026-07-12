@@ -1,0 +1,229 @@
+{
+  "elementi": [
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "8"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "AGO PER ANESTESIA SPINALE PUNTA MATITA",
+      "altri_dettagli": "Categorie criteri presenti nella tabella: Caratteristiche dell’ago; Caratteristiche del confezionamento; Caratteristiche Etichettatura. Fonte: capitolato speciale (CSV fornito).",
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Agevole penetrazione e scorrevolezza dell’ago nel passaggio attraverso i tessuti.",
+          "punteggio_massimo": 20.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Categoria: Caratteristiche dell’ago. Max 20 Min 0"
+        },
+        {
+          "parametro": "Buona presa, fine maneggevolezza per percezione piani di penetrazione",
+          "punteggio_massimo": 20.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Categoria: Caratteristiche dell’ago. Max 20 Min 0"
+        },
+        {
+          "parametro": "Trasparenza idonea a visualizzare il riempimento",
+          "punteggio_massimo": 15.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Categoria: Caratteristiche dell’ago. Max 15 Min 0"
+        },
+        {
+          "parametro": "Praticità e sicurezza di incastro del mandrino con l’ago",
+          "punteggio_massimo": 15.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Categoria: Caratteristiche dell’ago. Max 15 Min 0"
+        },
+        {
+          "parametro": "Praticità del sistema di apertura del confezionamento primario a garanzia del mantenimento della sterilità del contenuto e della permanenza dell’assemblaggio tra i diversi componenti",
+          "punteggio_massimo": 5.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Categoria: Caratteristiche del confezionamento. Max 5 Min 0"
+        },
+        {
+          "parametro": "Completezza e chiarezza delle informazioni presenti in etichetta per facile e immediata identificazione del prodotto.",
+          "punteggio_massimo": 5.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Categoria: Caratteristiche Etichettatura. Max 5 Min 0"
+        }
+      ]
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "9"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "AGO PER ANESTESIA SPINALE PUNTA QUINCKE",
+      "altri_dettagli": "Categorie criteri presenti nella tabella: Caratteristiche dell’ago; Caratteristiche del confezionamento; Caratteristiche Etichettatura. Fonte: capitolato speciale (CSV fornito).",
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Agevole penetrazione e scorrevolezza dell’ago nel passaggio attraverso i tessuti.",
+          "punteggio_massimo": 20.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Categoria: Caratteristiche dell’ago. Max 20 Min 0"
+        },
+        {
+          "parametro": "Buona presa, fine maneggevolezza per percezione piani di penetrazione",
+          "punteggio_massimo": 20.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Categoria: Caratteristiche dell’ago. Max 20 Min 0"
+        },
+        {
+          "parametro": "Trasparenza idonea a visualizzare il riempimento",
+          "punteggio_massimo": 15.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Categoria: Caratteristiche dell’ago. Max 15 Min 0"
+        },
+        {
+          "parametro": "Praticità e sicurezza di incastro del mandrino con l’ago",
+          "punteggio_massimo": 15.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Categoria: Caratteristiche dell’ago. Max 15 Min 0"
+        },
+        {
+          "parametro": "Praticità del sistema di apertura del confezionamento primario a garanzia del mantenimento della sterilità del contenuto e della permanenza dell’assemblaggio tra i diversi componenti",
+          "punteggio_massimo": 5.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Categoria: Caratteristiche del confezionamento. Max 5 Min 0"
+        },
+        {
+          "parametro": "Completezza e chiarezza delle informazioni presenti in etichetta per facile e immediata identificazione del prodotto.",
+          "punteggio_massimo": 5.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Categoria: Caratteristiche Etichettatura. Max 5 Min 0"
+        }
+      ]
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "10"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "AGO PER ANESTESIA SPINALE PUNTA QUINCKE",
+      "altri_dettagli": "Categorie criteri presenti nella tabella: Caratteristiche dell’ago; Caratteristiche del confezionamento; Caratteristiche Etichettatura. Fonte: capitolato speciale (CSV fornito).",
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Agevole penetrazione e scorrevolezza dell’ago nel passaggio attraverso i tessuti.",
+          "punteggio_massimo": 20.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Categoria: Caratteristiche dell’ago. Max 20 Min 0"
+        },
+        {
+          "parametro": "Buona presa, fine maneggevolezza per percezione piani di penetrazione",
+          "punteggio_massimo": 20.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Categoria: Caratteristiche dell’ago. Max 20 Min 0"
+        },
+        {
+          "parametro": "Trasparenza idonea a visualizzare il riempimento",
+          "punteggio_massimo": 15.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Categoria: Caratteristiche dell’ago. Max 15 Min 0"
+        },
+        {
+          "parametro": "Praticità e sicurezza di incastro del mandrino con l’ago",
+          "punteggio_massimo": 15.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Categoria: Caratteristiche dell’ago. Max 15 Min 0"
+        },
+        {
+          "parametro": "Praticità del sistema di apertura del confezionamento primario a garanzia del mantenimento della sterilità del contenuto e della permanenza dell’assemblaggio tra i diversi componenti",
+          "punteggio_massimo": 5.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Categoria: Caratteristiche del confezionamento. Max 5 Min 0"
+        },
+        {
+          "parametro": "Completezza e chiarezza delle informazioni presenti in etichetta per facile e immediata identificazione del prodotto.",
+          "punteggio_massimo": 5.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Categoria: Caratteristiche Etichettatura. Max 5 Min 0"
+        }
+      ]
+    },
+    {
+      "numero_gara": null,
+      "numeri_lotto": [
+        "11"
+      ],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": "AGO PER ANESTESIA CAUDALE",
+      "altri_dettagli": "Categorie criteri presenti nella tabella: Caratteristiche dell’ago; Caratteristiche del confezionamento; Caratteristiche Etichettatura. Fonte: capitolato speciale (CSV fornito).",
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Agevole penetrazione e scorrevolezza dell’ago nel passaggio attraverso i tessuti.",
+          "punteggio_massimo": 20.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Categoria: Caratteristiche dell’ago. Max 20 Min 0"
+        },
+        {
+          "parametro": "Buona presa, fine maneggevolezza per percezione piani di penetrazione",
+          "punteggio_massimo": 20.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Categoria: Caratteristiche dell’ago. Max 20 Min 0"
+        },
+        {
+          "parametro": "Trasparenza idonea a visualizzare il riempimento",
+          "punteggio_massimo": 15.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Categoria: Caratteristiche dell’ago. Max 15 Min 0"
+        },
+        {
+          "parametro": "Praticità e sicurezza di incastro del mandrino con l’ago",
+          "punteggio_massimo": 15.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Categoria: Caratteristiche dell’ago. Max 15 Min 0"
+        },
+        {
+          "parametro": "Praticità del sistema di apertura del confezionamento primario a garanzia del mantenimento della sterilità del contenuto e della permanenza dell’assemblaggio tra i diversi componenti",
+          "punteggio_massimo": 5.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Categoria: Caratteristiche del confezionamento. Max 5 Min 0"
+        },
+        {
+          "parametro": "Completezza e chiarezza delle informazioni presenti in etichetta per facile e immediata identificazione del prodotto.",
+          "punteggio_massimo": 5.0,
+          "modalita_attribuzione": "D",
+          "dettagli_valutazione": "Categoria: Caratteristiche Etichettatura. Max 5 Min 0"
+        }
+      ]
+    }
+  ],
+  "documento_sorgente": "capitolato speciale"
+}

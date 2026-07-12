@@ -1,0 +1,146 @@
+{
+    "document_name": "FVG_capitolato_da_pag_77.json",
+    "methods": {
+        "baseline_docling": {
+            "tables_and_fragmentation": {
+                "expected_logical_tables": 14,
+                "extracted_useful_tables_count": 24,
+                "extracted_useful_tables_list": [
+                    "Punteggio",
+                    "Tab solo intestazione2",
+                    "Documentazione",
+                    "CEROTTI/MEDICAZIONI",
+                    "Prima Tabella di GARZE STERILI",
+                    "Seconda Tabella di GARZE STERILI",
+                    "GARZE LAPAROTOMICHE",
+                    "GARZE NON STERILI",
+                    "Prima Tabella di BENDE ADESIVE",
+                    "Seconda Tabella di BENDE ADESIVE",
+                    "BENDE NON ADESIVE",
+                    "BENDE MEDICATE",
+                    "OVATTA",
+                    "GIUDIZIO",
+                    "Prima Tabella di ALLEGATO",
+                    "Seconda Tabella di ALLEGATO",
+                    "Terza Tabella di ALLEGATO",
+                    "Quarta Tabella di ALLEGATO",
+                    "Quinta Tabella di ALLEGATO",
+                    "Sesta Tabella di ALLEGATO",
+                    "Settima Tabella di ALLEGATO",
+                    "Ottava Tabella di ALLEGATO",
+                    "Nona Tabella di ALLEGATO",
+                    "Quadro economico"
+                ],
+                "useless_tables_noise_count": 5,
+                "useless_tables_noise_list": [
+                    "Sommario",
+                    "Continua Sommario",
+                    "Tab solo intestazione",
+                    "Tab solo colonna sinistra",
+                    "Tab solo intestazione3"
+                ],
+                "fragmentation_extra_fragments": 10
+            },
+            "header_integrity": {
+                "expected_sequence_length": 61,
+                "predicted_sequence_length": 51,
+                "perfectly_aligned_columns": 8,
+                "alignment_score_percentage": 13.1
+            },
+            "hierarchy_and_entities": {
+                "lots_expected": 56,
+                "lots_found": 56,
+                "lot_recall_percentage": 100.0,
+                "missing_lots_ids": [],
+                "sublots_expected": 183,
+                "sublots_mapped_correctly": 0,
+                "sublot_hierarchy_score_percentage": 0.0,
+                "hierarchy_losses_details": [
+                    "Lot 1 found -> But missing Sublots: ['a', 'b', 'c']",
+                    "Lot 2 found -> But missing Sublots: ['a', 'b', 'c']",
+                    "Lot 3 found -> But missing Sublots: ['a', 'b', 'c']",
+                    "Lot 4 found -> But missing Sublots: ['a', 'b', 'c']",
+                    "Lot 5 found -> But missing Sublots: ['a', 'b', 'c']",
+                    "Lot 6 found -> But missing Sublots: ['a', 'b', 'c']",
+                    "Lot 8 found -> But missing Sublots: ['c', 'f', 'a', 'e', 'd', 'b']",
+                    "Lot 9 found -> But missing Sublots: ['c', 'f', 'a', 'e', 'd', 'b']",
+                    "Lot 10 found -> But missing Sublots: ['a', 'b']",
+                    "Lot 11 found -> But missing Sublots: ['a', 'b', 'c', 'd']",
+                    "Lot 15 found -> But missing Sublots: ['c', 'f', 'a', 'e', 'd', 'b']",
+                    "Lot 16 found -> But missing Sublots: ['d', 'e', 'l', 'k', 'g', 'i', 'h', 'f', 'a', 'j', 'b', 'c']",
+                    "Lot 17 found -> But missing Sublots: ['c', 'f', 'a', 'e', 'd', 'b']",
+                    "Lot 18 found -> But missing Sublots: ['g', 'c', 'f', 'a', 'e', 'd', 'b']",
+                    "Lot 19 found -> But missing Sublots: ['c', 'a', 'e', 'd', 'b']",
+                    "Lot 21 found -> But missing Sublots: ['a', 'b', 'c', 'd']",
+                    "Lot 24 found -> But missing Sublots: ['c', 'a', 'e', 'd', 'b']",
+                    "Lot 25 found -> But missing Sublots: ['a', 'b']",
+                    "Lot 26 found -> But missing Sublots: ['a', 'b']",
+                    "Lot 27 found -> But missing Sublots: ['a', 'b', 'c']",
+                    "Lot 28 found -> But missing Sublots: ['d', 'e', 'k', 'g', 'i', 'h', 'f', 'a', 'j', 'b', 'c']",
+                    "Lot 29 found -> But missing Sublots: ['a', 'b', 'c']",
+                    "Lot 30 found -> But missing Sublots: ['a', 'b', 'c']",
+                    "Lot 31 found -> But missing Sublots: ['a', 'b', 'c', 'd']",
+                    "Lot 32 found -> But missing Sublots: ['c', 'f', 'a', 'e', 'd', 'b']",
+                    "Lot 33 found -> But missing Sublots: ['a', 'b']",
+                    "Lot 34 found -> But missing Sublots: ['a', 'b']",
+                    "Lot 35 found -> But missing Sublots: ['a', 'b', 'c']",
+                    "Lot 36 found -> But missing Sublots: ['a', 'b']",
+                    "Lot 37 found -> But missing Sublots: ['a', 'b']",
+                    "Lot 39 found -> But missing Sublots: ['d', 'e', 'k', 'g', 'i', 'h', 'f', 'a', 'j', 'b', 'c']",
+                    "Lot 40 found -> But missing Sublots: ['d', 'e', 'g', 'i', 'h', 'f', 'a', 'j', 'b', 'c']",
+                    "Lot 41 found -> But missing Sublots: ['a', 'b', 'c', 'd']",
+                    "Lot 42 found -> But missing Sublots: ['a', 'b', 'c', 'd']",
+                    "Lot 43 found -> But missing Sublots: ['c', 'f', 'a', 'e', 'd', 'b']",
+                    "Lot 44 found -> But missing Sublots: ['a', 'b']",
+                    "Lot 46 found -> But missing Sublots: ['a', 'b']",
+                    "Lot 52 found -> But missing Sublots: ['d', 'e', 'g', 'h', 'f', 'a', 'b', 'c']",
+                    "Lot 53 found -> But missing Sublots: ['a', 'b']",
+                    "Lot 54 found -> But missing Sublots: ['a', 'b', 'c']",
+                    "Lot 55 found -> But missing Sublots: ['a', 'b']",
+                    "Lot 56 found -> But missing Sublots: ['a', 'b', 'c']"
+                ]
+            }
+        },
+        "custom_pipeline": {
+            "tables_and_fragmentation": {
+                "expected_logical_tables": 14,
+                "extracted_useful_tables_count": 14,
+                "extracted_useful_tables_list": [
+                    "Punteggio",
+                    "Dati",
+                    "Documentazione",
+                    "CEROTTI/MEDICAZIONI",
+                    "GARZE STERILI",
+                    "GARZE LAPAROTOMICHE",
+                    "GARZE NON STERILI",
+                    "BENDE ADESIVE",
+                    "BENDE NON ADESIVE",
+                    "BENDE MEDICATE",
+                    "OVATTA",
+                    "GIUDIZIO",
+                    "Allegato",
+                    "Quadro economico"
+                ],
+                "useless_tables_noise_count": 0,
+                "useless_tables_noise_list": [],
+                "fragmentation_extra_fragments": 0
+            },
+            "header_integrity": {
+                "expected_sequence_length": 61,
+                "predicted_sequence_length": 61,
+                "perfectly_aligned_columns": 54,
+                "alignment_score_percentage": 88.5
+            },
+            "hierarchy_and_entities": {
+                "lots_expected": 56,
+                "lots_found": 56,
+                "lot_recall_percentage": 100.0,
+                "missing_lots_ids": [],
+                "sublots_expected": 183,
+                "sublots_mapped_correctly": 183,
+                "sublot_hierarchy_score_percentage": 100.0,
+                "hierarchy_losses_details": []
+            }
+        }
+    }
+}

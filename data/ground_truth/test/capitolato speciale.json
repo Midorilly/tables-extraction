@@ -1,0 +1,285 @@
+{
+    "document_name": "capitolato speciale.pdf",
+    "metrics_summary": {
+        "total_tables": 12,
+        "total_lots": 11,
+        "total_sublots": 9
+    },
+    "logical_tables": [
+        {
+            "table_id": 1,
+            "description": "Oggetto e importo",
+            "pages_spanned": [
+                1
+            ],
+            "headers": {
+                "is_multirow": false,
+                "expected_columns": [
+                    "Lotto",
+                    "Importo annuale imponibile a base d’asta"
+                ]
+            }
+        },
+        {
+            "table_id": 2,
+            "description": "Prospetto riepilogativo",
+            "pages_spanned": [
+                2,
+                3
+            ],
+            "headers": {
+                "is_multirow": false,
+                "expected_columns": [
+                    "Lotto",
+                    "Importo annuale imponibile a base d’asta",
+                    "Importo biennale imponibile a base d’asta",
+                    "Importo rinnovo biennale imponibile a base d’asta",
+                    "Totale",
+                    "Incremento 50%",
+                    "Totale complessivo"
+                ]
+            }
+        },
+        {
+            "table_id": 3,
+            "description": "Capacità tecnico - professionale",
+            "pages_spanned": [
+                8
+            ],
+            "headers": {
+                "is_multirow": false,
+                "expected_columns": [
+                    "Lotto",
+                    "Capacità tecnico - professionale"
+                ]
+            }
+        },
+        {
+            "table_id": 4,
+            "description": "Cauzione provvisoria",
+            "pages_spanned": [
+                14
+            ],
+            "headers": {
+                "is_multirow": false,
+                "expected_columns": [
+                    "Lotto",
+                    "Cauzione provvisoria"
+                ]
+            }
+        },
+        {
+            "table_id": 5,
+            "description": "Contributo ANAC",
+            "pages_spanned": [
+                16
+            ],
+            "headers": {
+                "is_multirow": false,
+                "expected_columns": [
+                    "Lotto",
+                    "Codice Cig",
+                    "Contributo ANAC"
+                ]
+            }
+        },
+        {
+            "table_id": 6,
+            "description": "Qualità e valore tecnico",
+            "pages_spanned": [
+                20
+            ],
+            "headers": {
+                "is_multirow": false,
+                "expected_columns": [
+                    "Giudizio",
+                    "Valori del coefficiente",
+                    "Criterio di giudizio della proposta/ del miglioramento"
+                ]
+            }
+        },
+        {
+            "table_id": 7,
+            "description": "Lotti 1 e 2",
+            "pages_spanned": [
+                20,
+                21
+            ],
+            "headers": {
+                "is_multirow": true,
+                "expected_columns": {
+                    "0": [
+                        "LOTTO 1 e LOTTO 2. SET PER ANESTESIA PERIDURALE CONTINUA"
+                    ],
+                    "1": [
+                        "Elemento",
+                        "Descrizione",
+                        "Tipo Punteggio",
+                        "Punteggio"
+                    ]
+                }
+            }
+        },
+        {
+            "table_id": 8,
+            "description": "Lotti 3 e 4",
+            "pages_spanned": [
+                21,
+                22
+            ],
+            "headers": {
+                "is_multirow": true,
+                "expected_columns": {
+                    "0": [
+                        "LOTTI 3 e 4. SET PER ANESTESIA COMBINATA SPINALE E PERIDURALE CONTINUA"
+                    ],
+                    "1": [
+                        "Elemento",
+                        "Descrizione",
+                        "Tipo Punteggio",
+                        "Punteggio"
+                    ]
+                }
+            }
+        },
+        {
+            "table_id": 9,
+            "description": "Lotto 5",
+            "pages_spanned": [
+                22
+            ],
+            "headers": {
+                "is_multirow": true,
+                "expected_columns": {
+                    "0": [
+                        "LOTTO 5. SET PER ANESTESIA LOCO-REGIONALE PERIFERICA CONTINUA"
+                    ],
+                    "1": [
+                        "Elemento",
+                        "Descrizione",
+                        "Tipo Punteggio",
+                        "Punteggio"
+                    ]
+                }
+            }
+        },
+        {
+            "table_id": 10,
+            "description": "Lotti 6 e 7",
+            "pages_spanned": [
+                23
+            ],
+            "headers": {
+                "is_multirow": true,
+                "expected_columns": {
+                    "0": [
+                        "LOTTO 6 e 7. SET PER BLOCCHI PERIFERICI ECOGUIDATI"
+                    ],
+                    "1": [
+                        "Elemento",
+                        "Descrizione",
+                        "Tipo Punteggio",
+                        "Punteggio"
+                    ]
+                }
+            }
+        },
+        {
+            "table_id": 11,
+            "description": "Lotti 8, 9, 10 e 11",
+            "pages_spanned": [
+                23,
+                24
+            ],
+            "headers": {
+                "is_multirow": true,
+                "expected_columns": {
+                    "0": [
+                        "Lotto 8. AGO PER ANESTESIA SPINALE PUNTA MATITA\nLotto 9 e 10. AGO PER ANESTESIA SPINALE PUNTA QUINCKE\nLotto 11. AGO PER ANESTESIA CAUDALE"
+                    ],
+                    "1": [
+                        "Elemento",
+                        "Descrizione",
+                        "Tipo Punteggio",
+                        "Punteggio"
+                    ]
+                }
+            }
+        },
+        {
+            "table_id": 12,
+            "description": "Elenco set e aghi",
+            "pages_spanned": [
+                43,
+                44
+            ],
+            "headers": {
+                "is_multirow": false,
+                "expected_columns": [
+                    "Lotto",
+                    "Descrizione Lotto",
+                    "Quantitativo annuale"
+                ]
+            }
+        }
+    ],
+    "hierarchy": [
+        {
+            "lot_id": "1",
+            "sublots": []
+        },
+        {
+            "lot_id": "2",
+            "sublots": []
+        },
+        {
+            "lot_id": "3",
+            "sublots": [
+                "3°",
+                "3b"
+            ]
+        },
+        {
+            "lot_id": "4",
+            "sublots": []
+        },
+        {
+            "lot_id": "5",
+            "sublots": []
+        },
+        {
+            "lot_id": "6",
+            "sublots": [
+                "6a",
+                "6b",
+                "6c"
+            ]
+        },
+        {
+            "lot_id": "7",
+            "sublots": [
+                "7a",
+                "7b"
+            ]
+        },
+        {
+            "lot_id": "8",
+            "sublots": [
+                "8a",
+                "8b"
+            ]
+        },
+        {
+            "lot_id": "9",
+            "sublots": []
+        },
+        {
+            "lot_id": "10",
+            "sublots": []
+        },
+        {
+            "lot_id": "11",
+            "sublots": []
+        }
+    ]
+}

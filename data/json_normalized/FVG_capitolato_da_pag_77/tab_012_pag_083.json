@@ -1,0 +1,29 @@
+{
+  "elementi": [
+    {
+      "numero_gara": null,
+      "numeri_lotto": [],
+      "sub_lotto": null,
+      "durata_contratto_mesi": null,
+      "misure_dettagli_tecnici": null,
+      "confezionamento": null,
+      "codice_cig": [],
+      "codice_cnd": [],
+      "descrizione_lotto": null,
+      "altri_dettagli": "Tabella giudizi e coefficienti tratta dal documento 'FVG_capitolato_da_pag_77'. Intestazione: GIUDIZIO;COEFFICIENTE. Valori convertiti da formato italiano (virgola decimale).",
+      "fabbisogno_totale": null,
+      "importo_base_asta": null,
+      "importo_totale": null,
+      "strutture_destinatarie": [],
+      "criteri_associati": [
+        {
+          "parametro": "Giudizio",
+          "punteggio_massimo": 1.0,
+          "modalita_attribuzione": "coefficiente",
+          "dettagli_valutazione": "Mappatura giudizi -> coefficiente: Ottimo: 1.0; Buono: 0.8; Discreto: 0.7; Sufficiente: 0.6; Scarso: 0.4; Insufficiente: 0.2; Non valutabile/non presente/non conforme: 0.0."
+        }
+      ]
+    }
+  ],
+  "documento_sorgente": "FVG_capitolato_da_pag_77"
+}
